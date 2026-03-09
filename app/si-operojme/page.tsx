@@ -51,28 +51,28 @@ export default function SiOperojmePage() {
       {/* ISO Standards */}
       <section className="sec sec-subtle">
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
-            <div>
+          <div className="layout-2col">
+            <div className="layout-2col-content">
               <div className="eyebrow">Standardet</div>
               <h2 className="section-title">Operojmë sipas standardeve ndërkombëtare ISO</h2>
               <p className="section-sub">Të gjitha shërbimet tona ekzekutohen në përputhje me tre çertifikimet kryesore ISO, të audituara rregullisht nga organizma të pavarura.</p>
-              <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 36 }}>
+              <div className="iso-list">
                 {[
                   { code: "ISO 9001", name: "Sistemi i Menaxhimit të Cilësisë", desc: "Garantojmë që çdo shërbim dorëzohet sipas standardit të dakordësuar me klientin." },
                   { code: "ISO 14001", name: "Menaxhimi Mjedisor", desc: "Produktet dhe metodat tona janë të sigurta për mjedisin, në përputhje me rregulloret e BE-së." },
                   { code: "ISO 45001", name: "Shëndeti & Siguria në Punë", desc: "Siguria e stafit tonë është prioritet. Trajnime të rregullta dhe pajisje mbrojtëse për çdo punëtor." },
                 ].map((iso) => (
-                  <div key={iso.code} style={{ display: "flex", alignItems: "flex-start", gap: 16, padding: 20, background: "#fff", border: "1px solid var(--div)", borderRadius: "var(--r)" }}>
-                    <div style={{ fontFamily: "var(--font-m)", fontSize: "1rem", fontWeight: 500, color: "var(--blue)", minWidth: 90 }}>{iso.code}</div>
+                  <div key={iso.code} className="iso-list-item">
+                    <div className="iso-list-code">{iso.code}</div>
                     <div>
-                      <div style={{ fontFamily: "var(--font-d)", fontWeight: 600, fontSize: ".9rem", color: "var(--text-h)", marginBottom: 4 }}>{iso.name}</div>
-                      <div style={{ fontSize: ".85rem", color: "var(--text-m)" }}>{iso.desc}</div>
+                      <div className="iso-list-name">{iso.name}</div>
+                      <div className="iso-list-desc">{iso.desc}</div>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="photo-frame" style={{ aspectRatio: "3/4" }}>
+            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "3/4" }}>
               <img className="photo-cover" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=80" alt="Standardet ISO" style={{ filter: "brightness(.88) saturate(.8)" }} />
             </div>
           </div>
@@ -82,24 +82,24 @@ export default function SiOperojmePage() {
       {/* Digital Reporting */}
       <section className="sec">
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
-            <div className="photo-frame" style={{ aspectRatio: "4/3" }}>
+          <div className="layout-2col layout-2col--image-first">
+            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
               <img className="photo-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=80" alt="Raportim dixhital" style={{ filter: "brightness(.88) saturate(.8)" }} />
             </div>
-            <div>
+            <div className="layout-2col-content">
               <div className="eyebrow">Teknologjia</div>
               <h2 className="section-title">Raportim dixhital në kohë reale</h2>
               <p className="section-sub">Klientet tanë kanë akses në platformatën tonë dixhitale ku mund të shohin çdo shërbim të kryer, çdo raport dhe statusin aktual të kontratës.</p>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginTop: 36 }}>
+              <div className="layout-grid-2x2 digital-features">
                 {[
                   { title: "Raporte dixhitale", desc: "Çdo shërbim dokumentohet dhe arshivohet automatikisht." },
                   { title: "Supervizim në terren", desc: "Supervizorët tanë kontrollojnë çdo taskim në kohe reale." },
                   { title: "SLA të matshme", desc: "Garantojmë respektimin e afateve dhe standardeve të cilësisë." },
                   { title: "Komunikim i hapët", desc: "Menaxheri juaj i llogarisë është gjithmonë i disponueshëm." },
                 ].map((item) => (
-                  <div key={item.title} style={{ padding: 20, background: "var(--bg-subtle)", borderRadius: "var(--r)" }}>
-                    <div style={{ fontFamily: "var(--font-d)", fontWeight: 700, color: "var(--text-h)", marginBottom: 6 }}>{item.title}</div>
-                    <div style={{ fontSize: ".85rem", color: "var(--text-m)" }}>{item.desc}</div>
+                  <div key={item.title} className="digital-feature-card">
+                    <div className="digital-feature-title">{item.title}</div>
+                    <div className="digital-feature-desc">{item.desc}</div>
                   </div>
                 ))}
               </div>
@@ -116,19 +116,19 @@ export default function SiOperojmePage() {
             <h2 className="section-title">270+ Profesionistë të trajnuar</h2>
             <p className="section-sub">Çdo punëtor i UNI PROJECT kalon nëpërmjet një programi të plotë trajnimi përpara se të nisë punën.</p>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
+          <div className="layout-team-3">
             {[
               { title: "Trajnim i përgjithshëm", desc: "Çdo punëtor trajnohet mbi protokollet e pastrimit, sigurisë dhe komunikimit me klientin.", image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&auto=format&fit=crop&q=80" },
               { title: "Pajisje profesionale", desc: "Investojmë në teknologjitë më të reja të pastrimit — efikase, të sigurta dhe miqësore me mjedisin.", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=80" },
               { title: "Supervizim i vazhdueshëm", desc: "Supervizorët tanë janë prezentë në terren çdo ditë për të siguruar standardet më të larta.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=80" },
             ].map((card) => (
-              <div key={card.title} style={{ background: "#fff", border: "1px solid var(--div)", borderRadius: "var(--r)", overflow: "hidden", boxShadow: "var(--sh-sm)" }}>
-                <div style={{ height: 200, overflow: "hidden" }}>
-                  <img style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(.88) saturate(.8)" }} src={card.image} alt={card.title} />
+              <div key={card.title} className="team-card">
+                <div className="team-card-img">
+                  <img src={card.image} alt={card.title} />
                 </div>
-                <div style={{ padding: 24 }}>
-                  <div style={{ fontFamily: "var(--font-d)", fontWeight: 700, color: "var(--text-h)", marginBottom: 8 }}>{card.title}</div>
-                  <div style={{ fontSize: ".875rem", color: "var(--text-m)" }}>{card.desc}</div>
+                <div className="team-card-body">
+                  <div className="team-card-title">{card.title}</div>
+                  <div className="team-card-desc">{card.desc}</div>
                 </div>
               </div>
             ))}

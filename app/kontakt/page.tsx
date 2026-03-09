@@ -18,7 +18,7 @@ export default function KontaktPage() {
 
       <section className="sec">
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "2fr 3fr", gap: 64, alignItems: "start" }}>
+          <div className="layout-contact">
             {/* Contact info */}
             <div>
               <div className="eyebrow">Informacione</div>
@@ -76,7 +76,7 @@ export default function KontaktPage() {
             </div>
 
             {/* Contact form */}
-            <div style={{ background: "var(--bg-subtle)", borderRadius: "var(--r-lg)", padding: 48 }}>
+            <div className="kontakt-form-wrap">
               <div style={{ marginBottom: 28 }}>
                 <div className="eyebrow">Formulari</div>
                 <h3 style={{ fontFamily: "var(--font-d)", fontSize: "1.4rem", fontWeight: 700, color: "var(--text-h)" }}>Kërkoni një ofertë</h3>

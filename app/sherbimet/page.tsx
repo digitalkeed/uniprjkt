@@ -26,55 +26,46 @@ export default function SherbimetPage() {
         <div className="wrap">
           {serviceDetails.map((svc, i) => (
             <div key={svc.slug}>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "1fr 1fr",
-                  gap: 72,
-                  alignItems: "center",
-                  marginBottom: i < serviceDetails.length - 1 ? 100 : 0,
-                }}
-              >
-                {i % 2 === 1 && (
-                  <div className="photo-frame" style={{ aspectRatio: "4/3", order: 1 }}>
-                    <img
-                      className="photo-cover"
-                      src={svc.image}
-                      alt={svc.title}
-                      style={{ filter: "brightness(.9) saturate(.85)" }}
-                    />
-                  </div>
-                )}
-                <div style={{ order: i % 2 === 1 ? 2 : undefined }}>
-                  <div className="eyebrow">Shërbimi {svc.number}</div>
-                  <h2 className="section-title">{svc.title}</h2>
-                  <p className="section-sub">{svc.description}</p>
-                  <div style={{ marginTop: 28 }}>
-                    <CheckList items={svc.checklist} />
-                  </div>
-                  <div style={{ marginTop: 32, display: "flex", gap: 12 }}>
-                    <Link href={`/sherbimet/${svc.slug}`} className="btn btn-blue">
-                      Shiko më shumë
-                    </Link>
-                    <Link href="/kontakt" className="btn btn-outline">
-                      Kërko ofertë
-                    </Link>
-                  </div>
-                </div>
-                {i % 2 === 0 && (
-                  <div className="photo-frame" style={{ aspectRatio: "4/3" }}>
-                    <img
-                      className="photo-cover"
-                      src={svc.image}
-                      alt={svc.title}
-                      style={{ filter: "brightness(.9) saturate(.85)" }}
-                    />
-                  </div>
+              <div className={`layout-2col sherbimet-block ${i % 2 === 1 ? "layout-2col--image-first" : ""}`} style={{ marginBottom: i < serviceDetails.length - 1 ? 100 : 0 }}>
+                {i % 2 === 1 ? (
+                  <>
+                    <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
+                      <img className="photo-cover" src={svc.image} alt={svc.title} style={{ filter: "brightness(.9) saturate(.85)" }} />
+                    </div>
+                    <div className="layout-2col-content">
+                      <div className="eyebrow">Shërbimi {svc.number}</div>
+                      <h2 className="section-title">{svc.title}</h2>
+                      <p className="section-sub">{svc.description}</p>
+                      <div style={{ marginTop: 28 }}>
+                        <CheckList items={svc.checklist} />
+                      </div>
+                      <div className="sherbimet-actions">
+                        <Link href={`/sherbimet/${svc.slug}`} className="btn btn-blue">Shiko më shumë</Link>
+                        <Link href="/kontakt" className="btn btn-outline">Kërko ofertë</Link>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="layout-2col-content">
+                      <div className="eyebrow">Shërbimi {svc.number}</div>
+                      <h2 className="section-title">{svc.title}</h2>
+                      <p className="section-sub">{svc.description}</p>
+                      <div style={{ marginTop: 28 }}>
+                        <CheckList items={svc.checklist} />
+                      </div>
+                      <div className="sherbimet-actions">
+                        <Link href={`/sherbimet/${svc.slug}`} className="btn btn-blue">Shiko më shumë</Link>
+                        <Link href="/kontakt" className="btn btn-outline">Kërko ofertë</Link>
+                      </div>
+                    </div>
+                    <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
+                      <img className="photo-cover" src={svc.image} alt={svc.title} style={{ filter: "brightness(.9) saturate(.85)" }} />
+                    </div>
+                  </>
                 )}
               </div>
-              {i < serviceDetails.length - 1 && (
-                <hr className="hr" style={{ marginBottom: 100 }} />
-              )}
+              {i < serviceDetails.length - 1 && <hr className="hr sherbimet-hr" />}
             </div>
           ))}
         </div>

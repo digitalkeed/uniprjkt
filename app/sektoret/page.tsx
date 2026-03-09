@@ -23,8 +23,8 @@ export default function SektoretPage() {
       <section className="sec">
         <div className="wrap">
           {/* Sector 1 */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 72, alignItems: "center", marginBottom: 96 }}>
-            <div>
+          <div className="layout-2col sektoret-block">
+            <div className="layout-2col-content">
               <div className="eyebrow">Sektori {sectorDetails[0].number}</div>
               <h2 className="section-title">{sectorDetails[0].name}</h2>
               <p className="section-sub">{sectorDetails[0].description}</p>
@@ -32,18 +32,18 @@ export default function SektoretPage() {
                 <CheckList items={sectorDetails[0].checklist} />
               </div>
             </div>
-            <div className="photo-frame" style={{ aspectRatio: "4/3" }}>
+            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
               <img className="photo-cover" src={sectorDetails[0].image} alt={sectorDetails[0].name} style={{ filter: "brightness(.85) saturate(.8)" }} />
             </div>
           </div>
-          <hr className="hr" style={{ marginBottom: 96 }} />
+          <hr className="hr sektoret-hr" />
 
           {/* Sector 2 */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 72, alignItems: "center", marginBottom: 96 }}>
-            <div className="photo-frame" style={{ aspectRatio: "4/3" }}>
+          <div className="layout-2col layout-2col--image-first sektoret-block">
+            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
               <img className="photo-cover" src={sectorDetails[1].image} alt={sectorDetails[1].name} style={{ filter: "brightness(.85) saturate(.8)" }} />
             </div>
-            <div>
+            <div className="layout-2col-content">
               <div className="eyebrow">Sektori {sectorDetails[1].number}</div>
               <h2 className="section-title">{sectorDetails[1].name}</h2>
               <p className="section-sub">{sectorDetails[1].description}</p>
@@ -52,12 +52,12 @@ export default function SektoretPage() {
               </div>
             </div>
           </div>
-          <hr className="hr" style={{ marginBottom: 96 }} />
+          <hr className="hr sektoret-hr" />
 
           {/* Sectors 3 + 4 side by side */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 32, marginBottom: 96 }}>
+          <div className="layout-2col sektoret-cards" style={{ gap: 32, marginBottom: 96 }}>
             {sectorCards.map((sec) => (
-              <div key={sec.number} style={{ background: "var(--bg-subtle)", borderRadius: "var(--r-lg)", padding: 48, display: "flex", flexDirection: "column", gap: 24 }}>
+              <div key={sec.number} className="sektoret-card">
                 <div className="card-icon">
                   <SectorIcon type={sec.icon} />
                 </div>
@@ -74,7 +74,7 @@ export default function SektoretPage() {
               </div>
             ))}
           </div>
-          <hr className="hr" style={{ marginBottom: 96 }} />
+          <hr className="hr sektoret-hr" />
 
           {/* Sectors 5-8 grid */}
           <div className="sh center">

@@ -97,7 +97,7 @@ export default function HomePage() {
       {/* SERVICES OVERVIEW */}
       <section className="sec">
         <div className="wrap">
-          <div className="sh" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 24, marginBottom: 48 }}>
+          <div className="sh sec-header-row">
             <div>
               <div className="eyebrow">Shërbimet</div>
               <h2 className="section-title">3 shtylla — një partner</h2>
@@ -108,7 +108,7 @@ export default function HomePage() {
           <div className="svc-grid">
             {serviceSummaries.map((svc, i) => (
               <ScrollFade key={svc.slug} delay={i * 70}>
-                <Link href={svc.href} className="svc-card" style={{ display: "flex", flexDirection: "column", gap: 18, height: "100%" }}>
+                <Link href={svc.href} className="svc-card svc-card-inner">
                   <div className="card-icon">
                     <SectorIcon type={svc.icon} />
                   </div>
@@ -138,39 +138,39 @@ export default function HomePage() {
       {/* WHO TRUSTS US */}
       <section className="sec sec-subtle">
         <div className="wrap">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
-            <div>
+          <div className="layout-2col">
+            <div className="layout-2col-content">
               <div className="eyebrow">I besuar nga industria</div>
               <h2 className="section-title">Banka, qendra tregtare, institucione dhe biznese në Kosovë</h2>
-              <p className="section-sub" style={{ maxWidth: "none" }}>
+              <p className="section-sub trust-sub">
                 Që nga viti 2001, UNI PROJECT është partner i besueshëm i organizatave më të mëdha në vend. Shërbimet tona mbulojnë sektorin bankar, tregtar, publik dhe korporativ.
               </p>
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginTop: 36 }}>
-                <div style={{ padding: 24, background: "#fff", border: "1px solid var(--div)", borderRadius: "var(--r)", textAlign: "center" }}>
-                  <div style={{ fontFamily: "var(--font-d)", fontSize: "2rem", fontWeight: 800, color: "var(--navy)" }}>24<span style={{ color: "var(--blue)" }}>+</span></div>
-                  <div style={{ fontSize: ".8rem", color: "var(--text-m)", marginTop: 4 }}>Vite përvoja</div>
+              <div className="layout-grid-2x2 trust-stats">
+                <div className="trust-stat-card">
+                  <div className="trust-stat-n">24<span>+</span></div>
+                  <div className="trust-stat-l">Vite përvoja</div>
                 </div>
-                <div style={{ padding: 24, background: "#fff", border: "1px solid var(--div)", borderRadius: "var(--r)", textAlign: "center" }}>
-                  <div style={{ fontFamily: "var(--font-d)", fontSize: "2rem", fontWeight: 800, color: "var(--navy)" }}>270<span style={{ color: "var(--blue)" }}>+</span></div>
-                  <div style={{ fontSize: ".8rem", color: "var(--text-m)", marginTop: 4 }}>Profesionistë</div>
+                <div className="trust-stat-card">
+                  <div className="trust-stat-n">270<span>+</span></div>
+                  <div className="trust-stat-l">Profesionistë</div>
                 </div>
-                <div style={{ padding: 24, background: "var(--navy)", borderRadius: "var(--r)", textAlign: "center" }}>
-                  <div style={{ fontFamily: "var(--font-m)", fontSize: "1.2rem", fontWeight: 500, color: "#7EB3F5" }}>ISO</div>
-                  <div style={{ fontSize: ".8rem", color: "rgba(255,255,255,.5)", marginTop: 4 }}>9001 / 14001 / 45001</div>
+                <div className="trust-stat-card trust-stat-card-navy">
+                  <div className="trust-stat-n">ISO</div>
+                  <div className="trust-stat-l">9001 / 14001 / 45001</div>
                 </div>
-                <div style={{ padding: 24, background: "#fff", border: "1px solid var(--div)", borderRadius: "var(--r)", textAlign: "center" }}>
-                  <div style={{ fontFamily: "var(--font-d)", fontSize: "2rem", fontWeight: 800, color: "var(--navy)" }}>24<span style={{ color: "var(--blue)" }}>/7</span></div>
-                  <div style={{ fontSize: ".8rem", color: "var(--text-m)", marginTop: 4 }}>Shërbim aktiv</div>
+                <div className="trust-stat-card">
+                  <div className="trust-stat-n">24<span>/7</span></div>
+                  <div className="trust-stat-l">Shërbim aktiv</div>
                 </div>
               </div>
-              <div style={{ marginTop: 32 }}>
+              <div className="trust-cta">
                 <Link href="/sektoret" className="btn btn-blue">
                   Shiko sektoret <ArrowIcon />
                 </Link>
               </div>
             </div>
-            <div style={{ position: "relative" }}>
-              <div className="photo-frame" style={{ aspectRatio: "3/4" }}>
+            <div className="layout-2col-img trust-visual">
+              <div className="photo-frame trust-photo">
                 <img
                   className="photo-cover"
                   src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&auto=format&fit=crop&q=80"
@@ -178,9 +178,9 @@ export default function HomePage() {
                   style={{ filter: "brightness(.88) saturate(.85)" }}
                 />
               </div>
-              <div style={{ position: "absolute", bottom: -20, right: -20, background: "var(--blue)", color: "#fff", borderRadius: "var(--r)", padding: "20px 26px", boxShadow: "var(--sh-lg)" }}>
-                <div style={{ fontFamily: "var(--font-d)", fontSize: "1.5rem", fontWeight: 800 }}>ISO</div>
-                <div style={{ fontSize: ".7rem", letterSpacing: ".06em", opacity: .75, fontFamily: "var(--font-m)", marginTop: 2 }}>I ÇERTIFIKUAR</div>
+              <div className="trust-badge">
+                <div className="trust-badge-h">ISO</div>
+                <div className="trust-badge-l">I ÇERTIFIKUAR</div>
               </div>
             </div>
           </div>
