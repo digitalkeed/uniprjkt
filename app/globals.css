@@ -101,6 +101,9 @@ ul { list-style: none; }
 .nav-logo { display: flex; align-items: center; gap: 11px; flex-shrink: 0; margin-right: auto; }
 .logo-mark { width: 38px; height: 38px; background: var(--navy); border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center; }
 .logo-mark svg { width: 22px; height: 22px; color: #fff; }
+.logo-mark--blue { background: transparent; }
+.logo-mark--blue svg { color: var(--blue); }
+.logo-mark-svg { width: 22px; height: 22px; }
 .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .logo-name { font-family: var(--font-d); font-weight: 700; font-size: .85rem; color: var(--navy); letter-spacing: .06em; text-transform: uppercase; }
 .logo-sub { font-family: var(--font-m); font-size: 8.5px; color: var(--blue); letter-spacing: .1em; text-transform: uppercase; }
