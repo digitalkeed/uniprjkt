@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServiceDetailPage from "@/components/ServiceDetailPage";
 import { getServiceDetail } from "@/content/services";
 
-export const metadata: Metadata = { title: "On-call & Emergjencë" };
+export const metadata: Metadata = { title: "Gatishmëri & Emergjencë" };
 
 export default function OncallPage() {
   const service = getServiceDetail("oncall")!;

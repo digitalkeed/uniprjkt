@@ -66,7 +66,7 @@ export default function HomePage() {
           <div className="hero-visual">
             <div className="hero-frame">
               <img
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&auto=format&fit=crop&q=80"
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Ambiente profesionale të pastra"
               />
               <div className="stat-card">
@@ -173,7 +173,7 @@ export default function HomePage() {
               <div className="photo-frame trust-photo">
                 <img
                   className="photo-cover"
-                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=900&auto=format&fit=crop&q=80"
+                  src="https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=900"
                   alt="Ekipi profesional i UNI PROJECT"
                   style={{ filter: "brightness(.88) saturate(.85)" }}
                 />

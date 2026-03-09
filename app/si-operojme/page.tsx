@@ -73,7 +73,7 @@ export default function SiOperojmePage() {
               </div>
             </div>
             <div className="photo-frame layout-2col-img" style={{ aspectRatio: "3/4" }}>
-              <img className="photo-cover" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=80" alt="Standardet ISO" style={{ filter: "brightness(.88) saturate(.8)" }} />
+              <img className="photo-cover" src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Standardet ISO" style={{ filter: "brightness(.88) saturate(.8)" }} />
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function SiOperojmePage() {
         <div className="wrap">
           <div className="layout-2col layout-2col--image-first">
             <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-              <img className="photo-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=80" alt="Raportim dixhital" style={{ filter: "brightness(.88) saturate(.8)" }} />
+              <img className="photo-cover" src="https://images.pexels.com/photos/5900418/pexels-photo-5900418.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Raportim dixhital" style={{ filter: "brightness(.88) saturate(.8)" }} />
             </div>
             <div className="layout-2col-content">
               <div className="eyebrow">Teknologjia</div>
@@ -118,9 +118,9 @@ export default function SiOperojmePage() {
           </div>
           <div className="layout-team-3">
             {[
-              { title: "Trajnim i përgjithshëm", desc: "Çdo punëtor trajnohet mbi protokollet e pastrimit, sigurisë dhe komunikimit me klientin.", image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&auto=format&fit=crop&q=80" },
-              { title: "Pajisje profesionale", desc: "Investojmë në teknologjitë më të reja të pastrimit — efikase, të sigurta dhe miqësore me mjedisin.", image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&auto=format&fit=crop&q=80" },
-              { title: "Supervizim i vazhdueshëm", desc: "Supervizorët tanë janë prezentë në terren çdo ditë për të siguruar standardet më të larta.", image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&auto=format&fit=crop&q=80" },
+              { title: "Trajnim i përgjithshëm", desc: "Çdo punëtor trajnohet mbi protokollet e pastrimit, sigurisë dhe komunikimit me klientin.", image: "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=600" },
+              { title: "Pajisje profesionale", desc: "Investojmë në teknologjitë më të reja të pastrimit — efikase, të sigurta dhe miqësore me mjedisin.", image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" },
+              { title: "Supervizim i vazhdueshëm", desc: "Supervizorët tanë janë prezentë në terren çdo ditë për të siguruar standardet më të larta.", image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=600" },
             ].map((card) => (
               <div key={card.title} className="team-card">
                 <div className="team-card-img">

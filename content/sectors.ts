@@ -22,7 +22,7 @@ export const sectors: Sector[] = [
   },
   {
     name: "Zyra Korporative",
-    description: "Facility management i integruar për zyrat e mëdha.",
+    description: "Menaxhimi i objekteve i integruar për zyrat e mëdha.",
     icon: "monitor",
   },
   {
@@ -36,7 +36,7 @@ export const sectors: Sector[] = [
     icon: "heart",
   },
   {
-    name: "Hoteli & Hospitality",
+    name: "Hoteli & Mikpritje",
     description: "Standarde premium higjienik.",
     icon: "star",
   },
@@ -68,7 +68,7 @@ export const sectorDetails: SectorDetail[] = [
       "Mirëmbajtje e rrjeteve me dekë të shumta",
     ],
     image:
-      "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     number: "02",
@@ -82,7 +82,7 @@ export const sectorDetails: SectorDetail[] = [
       "Furnizim me materiale higjienike",
     ],
     image:
-      "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
 ];
 
@@ -125,7 +125,7 @@ export const smallSectors = [
     icon: "heart",
   },
   {
-    name: "Hoteli & Hospitality",
+    name: "Hoteli & Mikpritje",
     description: "Standarde premium higjienike për hotelë, restorante dhe objekte akomodimi.",
     icon: "star",
   },

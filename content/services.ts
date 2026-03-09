@@ -37,7 +37,7 @@ export const serviceSummaries: ServiceSummary[] = [
   },
   {
     slug: "facility",
-    title: "Facility Management",
+    title: "Menaxhimi i Objekteve",
     description:
       "Mirëmbajtje teknike e plotë, furnizim materialesh, supervizim i vazhdueshëm dhe raportim transparent.",
     icon: "monitor",
@@ -51,7 +51,7 @@ export const serviceSummaries: ServiceSummary[] = [
   },
   {
     slug: "oncall",
-    title: "On-call / Emergjencë",
+    title: "Gatishmëri / Emergjencë",
     description:
       "Gatishmëri e plotë 24/7 për intervenime urgjente, shërbime sezonale dhe situata të papritura.",
     icon: "clock",
@@ -83,7 +83,7 @@ export const serviceDetails: ServiceDetail[] = [
       "Produkte të sigurta për mjedisin dhe njerëzit",
     ],
     image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/7078712/pexels-photo-7078712.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Planifikimi",
@@ -110,7 +110,7 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "facility",
     number: "02",
-    title: "Facility Management",
+    title: "Menaxhimi i Objekteve",
     subtitle:
       "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim materialesh, supervizim dhe raportim transparent në kohe reale.",
     description:
@@ -124,7 +124,7 @@ export const serviceDetails: ServiceDetail[] = [
       "Kontakt i dedikuar me menaxherin e llogarisë",
     ],
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Auditimi fillestar",
@@ -165,7 +165,7 @@ export const serviceDetails: ServiceDetail[] = [
       "Raportim të plotë me dokumentacion të procesit",
     ],
     image:
-      "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/4035588/pexels-photo-4035588.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Vështërimi i riskut",
@@ -192,7 +192,7 @@ export const serviceDetails: ServiceDetail[] = [
   {
     slug: "oncall",
     number: "04",
-    title: "On-call & Emergjencë",
+    title: "Gatishmëri & Emergjencë",
     subtitle:
       "Gatishmëri e plotë 24/7 për çdo situatë të papërpunuar — intervenime të shpejta, shërbime sezonale dhe ndihmë kurdo që kërkohet.",
     description:
@@ -206,7 +206,7 @@ export const serviceDetails: ServiceDetail[] = [
       "Komunikim i drejtpërdrejtë me ekipin operacional",
     ],
     image:
-      "https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=900&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Thirrja",

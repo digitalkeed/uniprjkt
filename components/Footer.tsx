@@ -42,9 +42,9 @@ export default function Footer() {
             <div className="ft-col-title">Shërbimet</div>
             <ul className="ft-links">
               <li><Link href="/sherbimet/pastrim">Pastrim Profesional</Link></li>
-              <li><Link href="/sherbimet/facility">Facility Management</Link></li>
+              <li><Link href="/sherbimet/facility">Menaxhimi i Objekteve</Link></li>
               <li><Link href="/sherbimet/dezinfektim">Dezinfektim &amp; Sanitizim</Link></li>
-              <li><Link href="/sherbimet/oncall">On-call &amp; Emergjencë</Link></li>
+              <li><Link href="/sherbimet/oncall">Gatishmëri &amp; Emergjencë</Link></li>
             </ul>
           </div>
 

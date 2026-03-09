@@ -11,10 +11,10 @@ export const projects: Project[] = [
     sector: "Sektor Bankar",
     title: "Rrjet kombëtar bankar",
     description:
-      "Menaxhim i facility për mbi 30 degë bankare në të gjithë Kosovën. Shërbimet përfshijnë pastrim ditor, mirëmbajtje teknike dhe furnizim të përditëshëm me materiale.",
-    tags: ["Pastrim ditor", "Facility Management", "30+ degë"],
+      "Menaxhim i objekteve për mbi 30 degë bankare në të gjithë Kosovën. Shërbimet përfshijnë pastrim ditor, mirëmbajtje teknike dhe furnizim të përditëshëm me materiale.",
+    tags: ["Pastrim ditor", "Menaxhimi i objekteve", "30+ degë"],
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     sector: "Qendra Tregtare",
@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "Mirëmbajtje e plotë 24/7 e njës nga qendrat më të mëdha tregtare në Kosovë. Stafi ynë përbëhet nga 40 profesionistë të dedikuar me turne të koordinuara.",
     tags: ["24/7", "40 staf", "Pastrim gjatë orarit"],
     image:
-      "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
   {
     sector: "Institucione Publike",
@@ -32,6 +32,6 @@ export const projects: Project[] = [
       "Kontratanë afatgjatë për pastrim dhe menaxhim të nësë ndërtesave më të mëdha institucionale. Të gjitha procedurat janë në përputhje me ligjin e prokurimit publik.",
     tags: ["Prokurimi publik", "SLA", "Transparencë"],
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&auto=format&fit=crop&q=80",
+      "https://images.pexels.com/photos/2132182/pexels-photo-2132182.jpeg?auto=compress&cs=tinysrgb&w=900",
   },
 ];

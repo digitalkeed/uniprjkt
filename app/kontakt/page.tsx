@@ -96,9 +96,9 @@ export default function KontaktPage() {
                   <select defaultValue="">
                     <option value="" disabled>Zgjidhni shërbimin...</option>
                     <option>Pastrim Profesional</option>
-                    <option>Facility Management</option>
+                    <option>Menaxhimi i Objekteve</option>
                     <option>Dezinfektim &amp; Sanitizim</option>
-                    <option>On-call / Emergjencë</option>
+                    <option>Gatishmëri / Emergjencë</option>
                     <option>Paketë e plotë</option>
                   </select>
                 </div>
@@ -111,7 +111,7 @@ export default function KontaktPage() {
                     <option>Institucion publik</option>
                     <option>Zyrë korporative</option>
                     <option>Industri / Fabrikë</option>
-                    <option>Hotel / Hospitality</option>
+                    <option>Hotel / Mikpritje</option>
                     <option>Klinikë / Spital</option>
                     <option>Tjetër</option>
                   </select>
