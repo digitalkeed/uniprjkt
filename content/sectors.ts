@@ -36,7 +36,7 @@ export const sectors: Sector[] = [
     icon: "heart",
   },
   {
-    name: "Hoteli & Mikpritje",
+    name: "Hoteleri",
     description: "Standarde premium higjienik.",
     icon: "star",
   },
@@ -125,7 +125,7 @@ export const smallSectors = [
     icon: "heart",
   },
   {
-    name: "Hoteli & Mikpritje",
+    name: "Hoteleri",
     description: "Standarde premium higjienike për hotelë, restorante dhe objekte akomodimi.",
     icon: "star",
   },

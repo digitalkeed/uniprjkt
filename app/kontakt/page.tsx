@@ -111,7 +111,7 @@ export default function KontaktPage() {
                     <option>Institucion publik</option>
                     <option>Zyrë korporative</option>
                     <option>Industri / Fabrikë</option>
-                    <option>Hotel / Mikpritje</option>
+                    <option>Hoteleri</option>
                     <option>Klinikë / Spital</option>
                     <option>Tjetër</option>
                   </select>
