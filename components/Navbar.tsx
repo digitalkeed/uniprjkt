@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from "./Logo";
 
 const links = [
   { href: "/", label: "Ballina" },
@@ -41,12 +40,8 @@ export default function Navbar() {
     <>
       <nav className={`nav-wrap${scrolled ? " scrolled" : ""}`} id="navbar">
         <div className="wrap nav-inner">
-          <Link href="/" className="nav-logo">
-            <Logo />
-            <div className="logo-text">
-              <span className="logo-name">Uni Project</span>
-              <span className="logo-sub">Sh.P.K. &middot; Est. 2001</span>
-            </div>
+          <Link href="/" className="nav-logo nav-logo--text">
+            Ballina
           </Link>
           <div className="nav-links">
             {links.map((l) => (

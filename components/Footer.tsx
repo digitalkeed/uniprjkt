@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -7,13 +6,6 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-main">
           <div>
-            <Link href="/" className="nav-logo" style={{ display: "inline-flex" }}>
-              <Logo />
-              <div className="logo-text">
-                <span className="logo-name">Uni Project</span>
-                <span className="logo-sub" style={{ color: "#7EB3F5" }}>Sh.P.K.</span>
-              </div>
-            </Link>
             <p className="ft-desc">
               Pastrim profesional, mirëmbajtje teknike dhe facility management në të gjithë
               Kosovën. Partner i besueshëm i sektorit korporativ që nga 2001.
