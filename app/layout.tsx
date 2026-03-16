@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   },
 };
 
+import CookiesConsent from "@/components/CookiesConsent";
+
 export default function RootLayout({
   children,
 }: {
@@ -31,7 +33,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="sq">
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookiesConsent />
+      </body>
     </html>
   );
 }

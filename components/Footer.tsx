@@ -78,9 +78,8 @@ export default function Footer() {
         <div className="ft-bottom">
           <div className="ft-legal">&copy; 2026 UNI PROJECT Sh.P.K. Të gjitha të drejtat e rezervuara.</div>
           <div className="ft-legal-links">
-            <a href="#">Politika e Privatësisë</a>
-            <a href="#">Kushtet e Shërbimit</a>
-            <a href="#">Cookies</a>
+            <Link href="/politika-privatisesi">Politika e Privatësisë</Link>
+            <Link href="/politika-privatisesi#cookies">Cookies</Link>
           </div>
         </div>
       </div>
