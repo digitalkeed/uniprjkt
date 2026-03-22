@@ -17,39 +17,60 @@ export default function SektoretPage() {
         breadcrumbs={[{ label: "Ballina", href: "/" }, { label: "Sektorët" }]}
         title="Sektorët që"
         titleEm="shërbejmë"
-        subtitle="Që nga sektori bankar deri tek industria e prodhimit — UNI PROJECT ofron zgjidhje të specializuara për çdo lloj objekti."
+        subtitle="Nga bankat dhe qendrat tregtare te spitalet, shkollat, industria dhe organizatat ndërkombëtare — UNI PROJECT ofron zgjidhje të strukturuara për çdo kontekst objekti."
       />
 
       <section className="sec">
         <div className="wrap">
-          <div className="layout-2col sektoret-block">
-            <div className="layout-2col-content">
-              <div className="eyebrow">Sektori {sectorDetails[0].number}</div>
-              <h2 className="section-title">{sectorDetails[0].name}</h2>
-              <p className="section-sub">{sectorDetails[0].description}</p>
-              <div className="mt-8">
-                <CheckList items={sectorDetails[0].checklist} />
+          {sectorDetails.map((detail, i) => (
+            <div key={detail.number}>
+              <div
+                className={`layout-2col sektoret-block ${i % 2 === 1 ? "layout-2col--image-first" : ""}`}
+              >
+                {i % 2 === 1 ? (
+                  <>
+                    <div className="photo-frame photo-frame-ar layout-2col-img">
+                      <img
+                        className="photo-cover photo-muted--soft"
+                        src={detail.image}
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="layout-2col-content">
+                      <div className="eyebrow">Sektori {detail.number}</div>
+                      <h2 className="section-title">{detail.name}</h2>
+                      <p className="section-sub">{detail.description}</p>
+                      <div className="mt-8">
+                        <CheckList items={detail.checklist} />
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="layout-2col-content">
+                      <div className="eyebrow">Sektori {detail.number}</div>
+                      <h2 className="section-title">{detail.name}</h2>
+                      <p className="section-sub">{detail.description}</p>
+                      <div className="mt-8">
+                        <CheckList items={detail.checklist} />
+                      </div>
+                    </div>
+                    <div className="photo-frame photo-frame-ar layout-2col-img">
+                      <img
+                        className="photo-cover photo-muted--soft"
+                        src={detail.image}
+                        alt=""
+                        loading="lazy"
+                      />
+                    </div>
+                  </>
+                )}
               </div>
+              {i < sectorDetails.length - 1 && <hr className="hr sektoret-hr" />}
             </div>
-            <div className="photo-frame photo-frame-ar layout-2col-img">
-              <img className="photo-cover photo-muted--soft" src={sectorDetails[0].image} alt={sectorDetails[0].name} loading="lazy" />
-            </div>
-          </div>
-          <hr className="hr sektoret-hr" />
+          ))}
 
-          <div className="layout-2col layout-2col--image-first sektoret-block">
-            <div className="photo-frame photo-frame-ar layout-2col-img">
-              <img className="photo-cover photo-muted--soft" src={sectorDetails[1].image} alt={sectorDetails[1].name} loading="lazy" />
-            </div>
-            <div className="layout-2col-content">
-              <div className="eyebrow">Sektori {sectorDetails[1].number}</div>
-              <h2 className="section-title">{sectorDetails[1].name}</h2>
-              <p className="section-sub">{sectorDetails[1].description}</p>
-              <div className="mt-8">
-                <CheckList items={sectorDetails[1].checklist} />
-              </div>
-            </div>
-          </div>
           <hr className="hr sektoret-hr" />
 
           <div className="layout-2col sektoret-cards" style={{ gap: 32, marginBottom: 96 }}>
@@ -71,7 +92,7 @@ export default function SektoretPage() {
 
           <div className="sh center">
             <div className="eyebrow">Sektorë të tjerë</div>
-            <h2 className="section-title">Edhe më shumë sektorë të shërbyer</h2>
+            <h2 className="section-title">Edhe më shumë kontekste</h2>
           </div>
           <div className="grid-4">
             {smallSectors.map((sec) => (
@@ -89,7 +110,7 @@ export default function SektoretPage() {
 
       <CTABand
         headline="Sektori juaj nuk është në listë?"
-        text="Na kontaktoni — ofrojmë zgjidhje të personalizuara për çdo lloj objekti dhe sektori."
+        text="Na kontaktoni — ofrojmë zgjidhje të personalizuara për çdo lloj objekti dhe afati."
         buttonLabel="Na kontaktoni"
         note="Përgjigje brenda 24 orësh"
       />

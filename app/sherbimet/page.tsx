@@ -19,7 +19,7 @@ export default function SherbimetPage() {
         breadcrumbs={[{ label: "Ballina", href: "/" }, { label: "Shërbimet" }]}
         title="Shërbimet"
         titleEm="tona"
-        subtitle="Katër shtylla operacionale — pastrim, menaxhim objektesh, dezinfektim dhe gatishmëri emergjence — me të njëjtin standard raportimi dhe SLA."
+        subtitle="Pesë shtylla operacionale — pastrim, menaxhim objektesh, dezinfektim, gatishmëri emergjence dhe shërbime të specializuara — me të njëjtin standard dokumentimi dhe SLA."
       />
 
       <section className="sec">

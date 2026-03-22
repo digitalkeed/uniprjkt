@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import CTABand from "@/components/CTABand";
 import PageHeader from "@/components/PageHeader";
 import ScrollFade from "@/components/ScrollFade";
+import { homeProcess } from "@/content/homepage";
 
 export const metadata: Metadata = { title: "Si Operojmë" };
 
@@ -15,63 +16,97 @@ export default function SiOperojmePage() {
         breadcrumbs={[{ label: "Ballina", href: "/" }, { label: "Si Operojmë" }]}
         title="Procesi ynë"
         titleEm="operacional"
-        subtitle="Transparencë e plotë në çdo hap — nga kontakti i parë deri te raportimi dixhital dhe rishikimet mujore me menaxherin e llogarisë."
+        subtitle="I njëjtë ritëm me ballinën: vlerësim, ofertë, implementim, supervizim dhe raportim — me kontroll cilësie, siguri në punë dhe monitorim dixhital që jep transparencë në zyrën qendrore."
       />
 
       <section className="sec">
         <div className="wrap">
           <div className="sh center">
-            <div className="eyebrow">Procesi i thelluar</div>
-            <h2 className="section-title">Nga kërkesa deri te kontrata dhe ekzekutimi</h2>
-            <p className="section-sub">
-              Këtu e detajojmë çfarë ndodh pas formularit — ndryshe nga përmbledhja tre-hapëshe në ballinë.
-            </p>
+            <div className="eyebrow">Pesë hapa</div>
+            <h2 className="section-title">{homeProcess.title}</h2>
+            <p className="section-sub">{homeProcess.subtitle}</p>
           </div>
-          <div className="process-strip">
-            <ScrollFade className="ps">
-              <div className="ps-num">01</div>
-              <div className="ps-title">Kontakti dhe kërkesa</div>
-              <p className="ps-desc">
-                Na kontaktoni me telefon ose email. Brenda 24 orëve të punës ju konfirmojmë një takim vlerësimi pa angazhim. Oferta e parë reflekton objektin, jo një shabllon.
-              </p>
-              <span className="ps-conn" aria-hidden>&#8594;</span>
-            </ScrollFade>
-            <ScrollFade className="ps">
-              <div className="ps-num">02</div>
-              <div className="ps-title">Vlerësimi dhe oferta e strukturuar</div>
-              <p className="ps-desc">
-                Eksperti vlerëson objektin në terren, përcakton SLA-në dhe ekipin. Oferta përmban çmim, orar, materiale dhe frekuencë raportimi — pa kosto të fshehura.
-              </p>
-              <span className="ps-conn" aria-hidden>&#8594;</span>
-            </ScrollFade>
-            <ScrollFade className="ps">
-              <div className="ps-num">03</div>
-              <div className="ps-title">Aktivizimi, supervizim dhe raport</div>
-              <p className="ps-desc">
-                Pas nënshkrimit, caktohet menaxheri i llogarisë. Ekzekutimi nis sipas planit; raportet dixhitale dhe takimet mujore mbajnë juve në kontroll të plotë.
-              </p>
-            </ScrollFade>
+          <div className="process-strip ops-process-strip">
+            {homeProcess.steps.map((step, idx) => (
+              <ScrollFade key={step.num} className="ps">
+                <div className="ps-num">{step.num}</div>
+                <div className="ps-title">{step.title}</div>
+                <p className="ps-desc">{step.desc}</p>
+                {idx < homeProcess.steps.length - 1 && (
+                  <span className="ps-conn" aria-hidden>
+                    &#8594;
+                  </span>
+                )}
+              </ScrollFade>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="sec sec-subtle">
         <div className="wrap">
+          <div className="sh center">
+            <div className="eyebrow">Kontroll cilësie</div>
+            <h2 className="section-title">Supervizim, lista inspeksioni dhe korrigjim</h2>
+            <p className="section-sub">
+              Cilësia nuk matet vetëm në takim mujor — ajo verifikohet çdo ditë në terren.
+            </p>
+          </div>
+          <div className="ops-qc-grid">
+            <div className="ops-qc-card">
+              <h3 className="ops-qc-title">Modeli i supervizimit</h3>
+              <p className="ops-qc-text">
+                Supervizorët tanë mbajnë përgjegjësi të qartë për zonat dhe turnet; shmangiet trajtohen para se të bëhen kosto ose rrezik reputacioni për ju.
+              </p>
+            </div>
+            <div className="ops-qc-card">
+              <h3 className="ops-qc-title">Lista e inspeksionit ditore</h3>
+              <p className="ops-qc-text">
+                Checklist të dokumentuara për objekt — jo “sy të pastër”, por pika të verifikuara që mbështesin menaxhimin tuaj të rrezikut.
+              </p>
+            </div>
+            <div className="ops-qc-card">
+              <h3 className="ops-qc-title">Ankesat dhe kërkesat</h3>
+              <p className="ops-qc-text">
+                Kanal i qartë eskalimi: regjistrim, përgjigje dhe korrigjim me afat — që ju të dini çfarë ndodhi dhe si u mbyll.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
           <div className="layout-2col">
             <div className="layout-2col-content">
               <div className="eyebrow">Standardet</div>
-              <h2 className="section-title">Operojmë sipas standardeve ndërkombëtare ISO</h2>
+              <h2 className="section-title">ISO, siguracion dhe politika barazie</h2>
               <p className="section-sub">
-                Çertifikimet tona (9001, 14001, 45001) mbështeten në auditime të pavarura; dokumentacioni mbetet i disponueshëm për ekipet tuaja të prokurimit dhe përputhjes.
+                Çertifikimet (9001, 14001, 45001) mbështeten në auditime të pavarura; dokumentacioni mbetet i disponueshëm për ekipet tuaja të prokurimit dhe përputhjes.
               </p>
               <p className="section-sub" style={{ marginTop: "var(--space-4)", fontSize: "var(--text-sm)" }}>
-                <strong>Shënim për blerësit korporativë:</strong> mund të kërkoni kopje të dëshmive të sistemit të menaxhimit dhe regjistrave të auditimit në fazën e tenderit.
+                <strong>Siguracion &amp; politika:</strong> mbajmë polisë sigurimi për dëme ndaj palëve të treta dhe politika për barazi dhe kundër diskriminimit — në përputhje me pritshmëritë e blerësve korporativë.
+              </p>
+              <p className="section-sub" style={{ marginTop: "var(--space-3)", fontSize: "var(--text-sm)" }}>
+                <strong>Për tenderë:</strong> mund të kërkoni kopje të dëshmive të sistemit të menaxhimit dhe regjistrave të auditimit në fazën e ofertës.
               </p>
               <div className="iso-list">
                 {[
-                  { code: "ISO 9001", name: "Sistemi i Menaxhimit të Cilësisë", desc: "Çdo shërbim dorëzohet sipas standardit të dakordësuar me klientin dhe SLA-së." },
-                  { code: "ISO 14001", name: "Menaxhimi mjedisor", desc: "Produktet dhe metodat janë të përshtatura për ndikim minimal mjedisor, në përputhje me kërkesat e BE-së." },
-                  { code: "ISO 45001", name: "Shëndeti dhe siguria në punë", desc: "Trajnime të rregullta, veshje mbrojtëse dhe procedura të dokumentuara për stafin në terren." },
+                  {
+                    code: "ISO 9001",
+                    name: "Sistemi i Menaxhimit të Cilësisë",
+                    desc: "Procese të përsëritshme dhe përmirësim i matshëm — jo vetëm deklarata.",
+                  },
+                  {
+                    code: "ISO 14001",
+                    name: "Menaxhimi mjedisor",
+                    desc: "Përzgjedhje materialesh dhe trajtim mbeturinash në përputhje me praktikat e mira.",
+                  },
+                  {
+                    code: "ISO 45001",
+                    name: "SHSK në punë",
+                    desc: "Trajnime, PPE dhe procedura të dokumentuara për stafin në terren.",
+                  },
                 ].map((iso) => (
                   <div key={iso.code} className="iso-list-item">
                     <div className="iso-list-code">{iso.code}</div>
@@ -87,7 +122,7 @@ export default function SiOperojmePage() {
               <img
                 className="photo-cover photo-muted--soft"
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Standardet ISO"
+                alt="Standardet ISO dhe dokumentacion"
                 loading="lazy"
               />
             </div>
@@ -95,29 +130,41 @@ export default function SiOperojmePage() {
         </div>
       </section>
 
-      <section className="sec">
+      <section className="sec sec-subtle">
         <div className="wrap">
           <div className="layout-2col layout-2col--image-first">
             <div className="photo-frame photo-frame-ar layout-2col-img">
               <img
                 className="photo-cover photo-muted--soft"
                 src="https://images.pexels.com/photos/5900418/pexels-photo-5900418.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Raportim dixhital"
+                alt="Monitorim dixhital"
                 loading="lazy"
               />
             </div>
             <div className="layout-2col-content">
-              <div className="eyebrow">Teknologjia</div>
-              <h2 className="section-title">Raportim dixhital në kohë reale</h2>
+              <div className="eyebrow">Monitorim dixhital</div>
+              <h2 className="section-title">Kohë, prani dhe dukshmëri qendrore</h2>
               <p className="section-sub">
-                Klientët tanë kanë akses në platformën tonë dixhitale ku shfaqen shërbimet e kryera, statusi i kontratës dhe raportet e supervizimit — jo vetëm PDF të dërguar me email.
+                Përveç raporteve të strukturuara, përdorim mjete që japin dukshmëri në zyrën tonë qendrore: gjurmim kohor inteligjent, monitorim i pranisë së stafit dhe (ku aplikohet) lëvizje e mjeteve — që menaxheri i llogarisë të ketë foto të qartë të operacionit, jo vetëm përmbledhje në email.
               </p>
               <div className="layout-grid-2x2 digital-features">
                 {[
-                  { title: "Raporte dixhitale", desc: "Çdo intervenim dokumentohet dhe mbetet i kërkueshëm për auditim." },
-                  { title: "Supervizim në terren", desc: "Supervizorët verifikojnë çdo detyrë të planifikuar sipas orarit." },
-                  { title: "SLA të matshme", desc: "Afate dhe cilësi të përcaktuara në kontratë — të gjurmueshme në raport." },
-                  { title: "Komunikim i drejtpërdrejtë", desc: "Menaxheri i llogarisë mbetet pika juaj e vetme e kontaktit operacional." },
+                  {
+                    title: "Gjurmim kohor dhe prani",
+                    desc: "Regjistrim i orarit dhe pranisë për turne — për përputhje me planin e objektit.",
+                  },
+                  {
+                    title: "Dukshmëri qendrore",
+                    desc: "Koordinim nga zyra: më pak boshllëqe komunikimi midis degëve dhe operacioneve.",
+                  },
+                  {
+                    title: "Dokumentim për SLA",
+                    desc: "Ngjarjet dhe ndërhyrjet mbeten të kërkueshme për rishikim dhe auditim të brendshëm.",
+                  },
+                  {
+                    title: "Menaxheri i llogarisë",
+                    desc: "Një pikë kontakti operacional — eskalim i qartë kur diçka del nga plani.",
+                  },
                 ].map((item) => (
                   <div key={item.title} className="digital-feature-card">
                     <div className="digital-feature-title">{item.title}</div>
@@ -130,18 +177,52 @@ export default function SiOperojmePage() {
         </div>
       </section>
 
+      <section className="sec">
+        <div className="wrap">
+          <div className="sh center">
+            <div className="eyebrow">Siguria &amp; disiplina</div>
+            <h2 className="section-title">Protokolle pune, PPE dhe procedura të dokumentuara</h2>
+            <p className="section-sub">
+              Stafi punon sipas rregullave të objektit dhe të UNI PROJECT: veshje mbrojtëse, paraparje rreziku dhe disiplinë operacionale — veçanërisht në lartësi, kimikate dhe zona me akses të kufizuar.
+            </p>
+          </div>
+          <ul className="ops-safety-list">
+            <li>Protokolle sigurie në punë të përditësuara dhe të njohura nga stafi para caktimit.</li>
+            <li>PPE dhe mjete sipas vlerësimit të rrezikut — jo “minimumi i përgjithshëm” për çdo objekt.</li>
+            <li>Disiplinë operacionale: komunikim me sigurinë e objektit dhe respektim i zonave të ndaluara.</li>
+          </ul>
+        </div>
+      </section>
+
       <section className="sec sec-subtle">
         <div className="wrap">
           <div className="sh center">
-            <div className="eyebrow">Ekipi ynë</div>
-            <h2 className="section-title">270+ profesionistë të trajnuar</h2>
-            <p className="section-sub">Çdo punonjës kalon trajnime për protokolle, siguri dhe komunikim me klientin përpara caktimit në objekt.</p>
+            <div className="eyebrow">Akademia &amp; ekipi</div>
+            <h2 className="section-title">Trajnim në Prishtinë që nga 2006 — përsëritur në punë</h2>
+            <p className="section-sub">
+              Akademia e Trajnimit në Prishtinë u hap më 10 nëntor 2006. Trajnimet nuk mbarojnë në klasë: ato përforcohen në vendin e punës me supervizorë dhe lista ditore — që 270+ profesionistët tanë të punojnë njësoj në degë të ndryshme.
+            </p>
           </div>
           <div className="layout-team-3">
             {[
-              { title: "Trajnim i strukturuar", desc: "Protokolle të qarta për pastrim, siguri në punë dhe sjellje në objektet e klientit.", image: "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=600" },
-              { title: "Pajisje profesionale", desc: "Investim i vazhdueshëm në mjete dhe agjentë që përputhen me standardet ISO dhe kërkesat e objektit.", image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" },
-              { title: "Supervizim në terren", desc: "Supervizorët tanë verifikojnë cilësinë dhe përputhjen me SLA në çdo javë operacionale.", image: "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=600" },
+              {
+                title: "Akademia dhe module operacionale",
+                desc: "Baza në akademi; përshtatje për protokollet e objektit tuaj dhe sektorin (bankë, shëndetësi, etj.).",
+                image:
+                  "https://images.pexels.com/photos/3184416/pexels-photo-3184416.jpeg?auto=compress&cs=tinysrgb&w=600",
+              },
+              {
+                title: "Pajisje dhe metoda",
+                desc: "Investim në mjete dhe agjentë që përputhen me ISO dhe me kërkesat e sipërfaqes — nga dysheme deri te fasadat.",
+                image:
+                  "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
+              },
+              {
+                title: "Supervizim dhe përmirësim",
+                desc: "Supervizorët verifikojnë SLA dhe u mësojnë ekipit korrigjimet në kohë reale — jo vetëm në raport mujor.",
+                image:
+                  "https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=600",
+              },
             ].map((card) => (
               <div key={card.title} className="team-card">
                 <div className="team-card-img">

@@ -26,10 +26,11 @@ export default function Footer() {
             <div className="ft-col-title">Navigimi</div>
             <ul className="ft-links">
               <li><Link href="/">Ballina</Link></li>
+              <li><Link href="/rreth-nesh">Rreth nesh</Link></li>
               <li><Link href="/sherbimet">Shërbimet</Link></li>
               <li><Link href="/sektoret">Sektorët</Link></li>
               <li><Link href="/si-operojme">Si Operojmë</Link></li>
-              <li><Link href="/projekte">Projekte</Link></li>
+              <li><Link href="/projekte">Referencat</Link></li>
               <li><Link href="/kontakt">Kontakti</Link></li>
             </ul>
           </div>
@@ -51,7 +52,10 @@ export default function Footer() {
                 <path d="M8 1C5.24 1 3 3.24 3 6c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z" strokeLinecap="round" />
                 <circle cx="8" cy="6" r="1.5" />
               </svg>
-              <span>Rr. Ukshin Hoti, Prishtinë, Kosovë</span>
+              <span>
+                Rr. Ukshin Hoti, Prishtinë, Kosovë
+                <span className="ft-coverage">Operojmë në Prishtinë, Mitrovicë, Pejë, Prizren, Gjilan, Ferizaj dhe qytete të tjera.</span>
+              </span>
             </div>
             <div className="ft-ci">
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4">

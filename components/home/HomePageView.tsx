@@ -12,6 +12,8 @@ import {
   homeStandards,
   homeServicesIntro,
   homeServiceBlocks,
+  homeTrainingBlock,
+  homeReferencesPreview,
   homeTestimonialsIntro,
   homeFinalCta,
 } from "@/content/homepage";
@@ -52,6 +54,7 @@ export default function HomePageView() {
               ))}
             </h1>
             <p className="hero-p fu fu2">{homeHero.lead}</p>
+            <p className="hero-mission fu fu2">{homeHero.missionLine}</p>
             <div className="hero-actions fu fu3">
               <Link href="/kontakt" className="btn btn-blue btn-lg">
                 Kërko ofertë <ArrowIcon />
@@ -106,6 +109,9 @@ export default function HomePageView() {
               <div className="home-about-actions">
                 <Link href="/kontakt" className="btn btn-blue">
                   Flisni me operacionet <ArrowIcon />
+                </Link>
+                <Link href="/rreth-nesh" className="btn btn-outline">
+                  Rreth nesh
                 </Link>
                 <Link href="/sherbimet" className="btn btn-ghost">
                   Shërbimet
@@ -210,6 +216,18 @@ export default function HomePageView() {
                 </div>
               </ScrollFade>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec sec-subtle" id="trajnimi-profesional" aria-labelledby="training-heading">
+        <div className="wrap">
+          <div className="home-training-block">
+            <div className="eyebrow">{homeTrainingBlock.eyebrow}</div>
+            <h2 id="training-heading" className="section-title">
+              {homeTrainingBlock.title}
+            </h2>
+            <p className="section-sub home-training-text">{homeTrainingBlock.text}</p>
           </div>
         </div>
       </section>
@@ -333,6 +351,37 @@ export default function HomePageView() {
                 </figure>
               </ScrollFade>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="sec sec-subtle home-refs-section"
+        id="referencat-preview"
+        aria-labelledby="refs-preview-heading"
+      >
+        <div className="wrap">
+          <div className="sh center">
+            <div className="eyebrow">Besuar nga organizata të njohura</div>
+            <h2 id="refs-preview-heading" className="section-title">
+              Partnerë dhe referenca
+            </h2>
+            <p className="section-sub">
+              Një përzgjedhje organizatesh me të cilat kemi bashkëpunuar ose operojmë — pa logot për arsye kontrate; emrat flasin për kontekstin institucional dhe financiar.
+            </p>
+          </div>
+          <ul className="home-refs-strip" role="list">
+            {homeReferencesPreview.map((ref) => (
+              <li key={ref.name} className="home-refs-item">
+                <span className="home-refs-name">{ref.name}</span>
+                <span className="home-refs-pill">{ref.category}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="section-cta-row">
+            <Link href="/projekte" className="btn btn-outline">
+              Shiko të gjitha referencat <ArrowIcon />
+            </Link>
           </div>
         </div>
       </section>

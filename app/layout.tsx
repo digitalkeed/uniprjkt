@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | UNI PROJECT Sh.P.K.",
   },
   description:
-    "Pastrim profesional, mirëmbajtje teknike dhe menaxhim i objekteve në të gjithë Kosovën — me standarde ISO, staf të trajnuar dhe raportim dixhital.",
+    "Pastrim profesional, mirëmbajtje teknike dhe menaxhim i objekteve në Kosovë — ISO 9001/14001/45001, akademi trajnimi që nga 2006, mbulim në Prishtinë dhe qytete të tjera.",
   keywords: [
     "pastrim profesional",
     "menaxhimi i objekteve",

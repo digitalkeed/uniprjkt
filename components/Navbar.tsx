@@ -7,10 +7,11 @@ import Logo from "./Logo";
 
 const links = [
   { href: "/", label: "Ballina" },
+  { href: "/rreth-nesh", label: "Rreth nesh" },
   { href: "/sherbimet", label: "Shërbimet" },
   { href: "/sektoret", label: "Sektorët" },
   { href: "/si-operojme", label: "Si Operojmë" },
-  { href: "/projekte", label: "Projekte" },
+  { href: "/projekte", label: "Referencat" },
   { href: "/kontakt", label: "Kontakti" },
 ];
 

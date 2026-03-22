@@ -19,6 +19,9 @@ export default function KontaktPage() {
 
       <section className="sec">
         <div className="wrap">
+          <p className="kontakt-coverage-banner">
+            Operojmë në Prishtinë, Mitrovicë, Pejë, Prizren, Gjilan, Ferizaj dhe qytete të tjera në Kosovë.
+          </p>
           <div className="layout-contact">
             <div>
               <div className="eyebrow">Informacione</div>
@@ -26,6 +29,23 @@ export default function KontaktPage() {
               <p className="section-sub kontakt-lead">
                 Jemi të hapur për çdo pyetje. Pas dërgimit të formës, një përgjegjës llogarie ju kontakton me email ose telefon për të konfirmuar detajet.
               </p>
+
+              <div className="kontakt-after-submit" aria-labelledby="after-submit-h">
+                <h3 id="after-submit-h" className="kontakt-after-submit-title">
+                  Çfarë ndodh pas dërgimit
+                </h3>
+                <ol className="kontakt-after-list">
+                  <li>
+                    <strong>Përgjigje brenda 24 orëve</strong> në ditë pune — konfirmim dhe pyetje shtesë për objektin.
+                  </li>
+                  <li>
+                    <strong>Vlerësim në vend</strong> kur është e nevojshme — për dimensionim të saktë të SLA-së dhe ekipit.
+                  </li>
+                  <li>
+                    <strong>Ofertë e strukturuar</strong> me fushëveprim, çmime, orar dhe raportim — pa angazhim derisa ta pranoni.
+                  </li>
+                </ol>
+              </div>
 
               <div className="contact-card-stack">
                 <div className="contact-card">
@@ -114,6 +134,7 @@ export default function KontaktPage() {
                     <option>Menaxhimi i Objekteve</option>
                     <option>Dezinfektim &amp; Sanitizim</option>
                     <option>Gatishmëri / Emergjencë</option>
+                    <option>Shërbime të specializuara</option>
                     <option>Paketë e plotë</option>
                   </select>
                 </div>
@@ -128,6 +149,7 @@ export default function KontaktPage() {
                     <option>Industri / Fabrikë</option>
                     <option>Hoteleri</option>
                     <option>Klinikë / Spital</option>
+                    <option>Organizatë ndërkombëtare</option>
                     <option>Tjetër</option>
                   </select>
                 </div>

@@ -10,7 +10,9 @@ export const homeHero = {
   titleLines: ["Operacione të pastra.", "Objekte në", "standarde të qarta."],
   titleEmphasis: 2, // index of line with <em> — "standarde të qarta"
   lead:
-    "UNI PROJECT është partner B2B për pastrim profesional, mirëmbajtje teknike dhe menaxhim objektesh në të gjithë Kosovën — me strukturë kontrate, supervizim dhe raportim të dokumentuar.",
+    "UNI PROJECT është partner B2B për pastrim profesional, mirëmbajtje teknike dhe menaxhim objektesh në të gjithë Kosovën — me strukturë kontrate, supervizim dhe dokumentim të lexueshëm.",
+  missionLine:
+    "Misioni ynë: mjedise të pastra, të sigurta dhe funksionale — me cilësi, përgjegjësi dhe profesionalizëm në çdo detaj.",
   proofLine:
     "Çertifikuar ISO · Mbulim kombëtar · Linjë operative 24/7 për situata kritike",
 };
@@ -19,9 +21,9 @@ export const homeAbout = {
   eyebrow: "Rreth kompanisë",
   title: "Partner operacional për objekte që nuk tolerojnë kaos",
   paragraphs: [
-    "UNI PROJECT Sh.P.K. operon që nga viti 2001 si ofrues i shërbimeve të pastrimit profesional, mirëmbajtjes teknike dhe menaxhimit të objekteve për organizata që kërkojnë përsëritshmëri, transparencë dhe përputhje me standarde ndërkombëtare.",
-    "Punojmë me banka, qendra tregtare, institucione publike, zyra korporative dhe ambiente me kërkesa të larta higjienike — nga Prishtina deri në degë në të gjithë vendin. Çdo kontratë strukturohet me pika të qarta kontakti, plane operacionale dhe raporte të lexueshme për menaxhimin ekzekutiv.",
-    "Nuk ofrojmë ‘pastrues të dërguar në lokacion’. Ofrojmë model operacional: ekip të trajnuar, protokolle SLA, supervizim të vazhdueshëm dhe dokumentim që mbështet auditime, tenderë dhe kontroll brenda organizatës suaj.",
+    "UNI PROJECT Sh.P.K. operon që nga viti 2001 si ofrues i pastrimit profesional, mirëmbajtjes teknike dhe menaxhimit të objekteve për klientë publikë dhe privatë — me mbi 24 vite përvojë dhe përputhje me standarde ndërkombëtare.",
+    "Punojmë me banka, qendra tregtare, institucione publike, organizata ndërkombëtare dhe zyra korporative — me të njëjtin disiplin operacional në Prishtinë, Mitrovicë, Pejë, Prizren, Gjilan, Ferizaj dhe në lokacione të tjera në Kosovë. Çdo kontratë ka pika të qarta kontakti, plane operative dhe raporte të lexueshme për menaxhimin ekzekutiv.",
+    "Nuk ofrojmë ‘pastrues të dërguar në lokacion’. Ofrojmë model operacional: ekip të trajnuar (përfshirë Akademinë e Trajnimit në Prishtinë që nga 2006), protokolle SLA, supervizim, kontroll cilësie me lista inspeksioni ditore dhe dokumentim që mbështet auditime dhe vendimmarrje.",
   ],
   imageAlt: "Koordinim operacional dhe komunikim profesional në objekt",
   imageSrc:
@@ -31,8 +33,10 @@ export const homeAbout = {
 export const homeProofMetrics = [
   { value: "24+", label: "vite përvoje në treg" },
   { value: "270+", label: "profesionistë të trajnuar" },
+  { value: "50+", label: "objekte aktive në menaxhim" },
   { value: "3", label: "çertifikime ISO (9001, 14001, 45001)" },
   { value: "24/7", label: "gatishmëri operative & linjë emergjence" },
+  { value: "Polisë", label: "siguracion për dëme ndaj palëve të treta" },
 ];
 
 export const homeWhy = {
@@ -50,12 +54,20 @@ export const homeWhy = {
       text: "Strukturë e qartë përgjegjësish në terren dhe në zyrë; kontroll i ritmit të punës dhe i përputhjes me planin.",
     },
     {
-      title: "Raportim & gjurmueshmëri",
-      text: "Dokumentim që mbështet vendimmarrjen: çfarë u krye, kur dhe me çfarë rezultati — i lexueshëm për menaxherët e objektit.",
+      title: "Dokumentim & gjurmueshmëri",
+      text: "Informacion që mbështet vendimmarrjen: çfarë u krye, kur dhe me çfarë rezultati — i lexueshëm për menaxherët e objektit.",
     },
     {
       title: "Ekip i trajnuar dhe i certifikuar",
       text: "Protokolle të përsëritshme, jo punë ad-hoc; përgatitje për ambiente me rregulla strikte sigurie dhe higjiene.",
+    },
+    {
+      title: "Siguracion për palë të treta",
+      text: "Polisë sigurimi që adreson dëme ndaj palëve të treta — një shtresë mbrojtjeje për operacionet tona në objektin tuaj.",
+    },
+    {
+      title: "Akademia e Trajnimit — Prishtinë",
+      text: "Që nga 10 nëntori 2006; trajnime të strukturuara dhe përsëritje në vendin e punës, me supervizorë dhe lista inspeksioni ditore.",
     },
     {
       title: "Gatishmëri operative reale",
@@ -72,7 +84,7 @@ export const homeWhy = {
   ],
 };
 
-/** Eight sectors — contextual copy for homepage (not only labels). */
+/** Sectors — contextual copy for homepage (not only labels). */
 export const homeSectors = [
   {
     name: "Banka & Financa",
@@ -91,6 +103,12 @@ export const homeSectors = [
     icon: "users" as const,
     context:
       "Kërkesa për transparencë, procedura të hapura dhe raporte të auditueshme. Strukturë dokumentimi që përputhet me pritshmëritë e prokurimit dhe kontrollit të brendshëm.",
+  },
+  {
+    name: "Organizata Ndërkombëtare",
+    icon: "briefcase" as const,
+    context:
+      "Misione dhe zyra me protokolle sigurie, konfidencialiteti dhe komunikim të strukturuar me palët vendase — EULEX, BE, OKB dhe organizata të ngjashme kërkojnë të njëjtin disiplin dokumentimi si institucionet tona më të mëdha.",
   },
   {
     name: "Zyra Korporative",
@@ -181,7 +199,15 @@ export const homeStandards = {
       ],
     },
     {
-      title: "Raportim & përgjegjësi",
+      title: "Siguracion & politika",
+      items: [
+        "Polisë sigurimi për dëme ndaj palëve të treta — transparencë me klientin",
+        "Protokolle shëndeti dhe sigurie në punë (PPE, procedura të dokumentuara)",
+        "Politikë barazie dhe kundër diskriminimit në punësim dhe shërbim",
+      ],
+    },
+    {
+      title: "Përgjegjësi & transparencë",
       items: [
         "Dokumentim për auditime të brendshme dhe kërkesa rregullatore",
         "Transparencë në furnizime dhe ndërhyrje",
@@ -193,14 +219,46 @@ export const homeStandards = {
 
 export const homeServicesIntro = {
   eyebrow: "Arkitektura e shërbimeve",
-  title: "Katër shtylla operacionale — një model raportimi",
+  title: "Pesë shtylla operacionale — një model dokumentimi",
   subtitle:
     "Secila shtyllë ka fushëveprim, protokolle dhe ekip — të integruara në një strukturë të vetme menaxhimi llogarie.",
 };
 
+export const homeTrainingBlock = {
+  eyebrow: "Trajnim & profesionalizëm",
+  title: "Akademia e Trajnimit dhe kontrolli në terren",
+  text:
+    "Akademia jonë e Trajnimit në Prishtinë funksionon që nga 10 nëntori 2006. Trajnimet nuk mbarojnë në klasë — ato përforcohen në vendin e punës, me supervizorë, lista inspeksioni ditore dhe korrigjim operacional para se problemet të thellohen.",
+};
+
+/** Named references for homepage strip (no logos — trust line). */
+export const homeReferencesPreview: { name: string; category: string }[] = [
+  { name: "RBKO", category: "Bankë qendrore" },
+  { name: "EULEX Kosovo", category: "Organizatë ndërkombëtare" },
+  { name: "Zyra e BE-së në Kosovë", category: "Organizatë ndërkombëtare" },
+  { name: "UNMIK", category: "Organizatë ndërkombëtare" },
+  { name: "Kuvendi i Kosovës", category: "Institucion publik" },
+  { name: "PCB", category: "Sektor privat / bankar" },
+  { name: "IS Bank", category: "Bankë" },
+  { name: "ZIRAAT Bank", category: "Bankë" },
+  { name: "OSCE", category: "Organizatë ndërkombëtare" },
+];
+
 /** Full service blocks for homepage — derived from canonical serviceDetails */
 export const homeServiceBlocks = serviceDetails.map((d) => {
   const tags = serviceSummaries.find((s) => s.slug === d.slug)?.tags ?? [];
+  const icon =
+    d.slug === "pastrim"
+      ? ("building" as const)
+      : d.slug === "facility"
+        ? ("monitor" as const)
+        : d.slug === "dezinfektim"
+          ? ("activity" as const)
+          : d.slug === "oncall"
+            ? ("clock" as const)
+            : d.slug === "specializuar"
+              ? ("layers" as const)
+              : ("building" as const);
   return {
     slug: d.slug,
     number: d.number,
@@ -211,14 +269,7 @@ export const homeServiceBlocks = serviceDetails.map((d) => {
     href: `/sherbimet/${d.slug}`,
     image: d.image,
     tags,
-    icon:
-      d.slug === "pastrim"
-        ? ("building" as const)
-        : d.slug === "facility"
-          ? ("monitor" as const)
-          : d.slug === "dezinfektim"
-            ? ("activity" as const)
-            : ("clock" as const),
+    icon,
   };
 });
 
@@ -238,6 +289,7 @@ export const homeFinalCta = {
     "Kohë përgjigjeje e parashikuar — pa pritje pa fund",
     "Ekip që punon me objekte të ngjashme në sektorin tuaj",
     "Pa detyrim derisa të pranoni një ofertë të shkruar",
+    "Mbulim: Prishtinë, Mitrovicë, Pejë, Prizren, Gjilan, Ferizaj dhe qytete të tjera në Kosovë",
   ],
   note: "Përgjigje e parë brenda 24 orëve · Objekte të të gjitha madhësive në Kosovë",
 };

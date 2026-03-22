@@ -25,9 +25,14 @@ export const serviceSummaries: ServiceSummary[] = [
     slug: "pastrim",
     title: "Pastrim Profesional",
     description:
-      "Pastrim ditor, industrial, pas ndërtimit dhe qendra tregtare me pajisje të avancuara dhe protokolle SLA.",
+      "Pastrim ditor, industrial, pas ndërtimit dhe në nivele të larta — me pajisje profesionale, protokolle SLA dhe dokumentim të lexueshëm.",
     icon: "building",
-    checklist: ["Pastrim ditor dhe thellë", "Pajisje profesionale", "Raportim dixhital"],
+    checklist: [
+      "Pastrim ditor dhe thellë",
+      "Xham, fasadë dhe nivele të larta",
+      "Pajisje dhe protokolle SLA",
+      "Dokumentim dhe transparencë",
+    ],
     tags: ["B2B", "SLA", "Higjienë"],
     href: "/sherbimet/pastrim",
   },
@@ -35,9 +40,14 @@ export const serviceSummaries: ServiceSummary[] = [
     slug: "facility",
     title: "Menaxhimi i Objekteve",
     description:
-      "Mirëmbajtje teknike e plotë, furnizim materialesh, supervizim i vazhdueshëm dhe raportim transparent.",
+      "Mirëmbajtje teknike, furnizim, supervizim dhe menaxhim stafi në lokacion — me inspektime, raportim dhe gjurmueshmëri.",
     icon: "monitor",
-    checklist: ["Mirëmbajtje teknike", "Materiale dhe furnizime", "Supervizim dhe raportim"],
+    checklist: [
+      "Mirëmbajtje teknike",
+      "Materiale dhe consumables",
+      "Staf në lokacionin e klientit",
+      "Inspektime dhe raportim",
+    ],
     tags: ["B2B", "24/7", "SLA"],
     href: "/sherbimet/facility",
   },
@@ -45,9 +55,14 @@ export const serviceSummaries: ServiceSummary[] = [
     slug: "dezinfektim",
     title: "Dezinfektim & Sanitizim",
     description:
-      "Protokolle të rrepta për objekte shëndetësore, ushqimore dhe ambiente me kërkesa të larta higjienike.",
+      "Protokolle të rrepta për objekte shëndetësore, ushqimore dhe ambiente me kërkesa të larta higjienike — me dokumentacion të plotë.",
     icon: "activity",
-    checklist: ["Produkte të certifikuara", "Dokumentacion i plotë", "Ekip i specializuar"],
+    checklist: [
+      "Produkte të certifikuara",
+      "Protokolle sipas sektorit",
+      "Ekip i specializuar",
+      "Dokumentacion për auditim",
+    ],
     tags: ["Certifikim", "SLA", "B2B"],
     href: "/sherbimet/dezinfektim",
   },
@@ -55,11 +70,31 @@ export const serviceSummaries: ServiceSummary[] = [
     slug: "oncall",
     title: "Gatishmëri / Emergjencë",
     description:
-      "Gatishmëri e plotë 24/7 për intervenime urgjente, shërbime sezonale dhe situata të papritura.",
+      "Gatishmëri 24/7 për intervenime urgjente, shërbime sezonale dhe mbështetje pas ngjarjeve — me linjë të dedikuar operacionale.",
     icon: "clock",
-    checklist: ["Gatishmëri 24/7", "Emergjenca dhe sezonale", "Orar i zgjatur"],
+    checklist: [
+      "Gatishmëri 24/7",
+      "Sezonale verë / dimër",
+      "Pas ngjarjeve dhe festave",
+      "Koordinim i shpejtë",
+    ],
     tags: ["24/7", "Emergjencë", "B2B"],
     href: "/sherbimet/oncall",
+  },
+  {
+    slug: "specializuar",
+    title: "Shërbime të Specializuara",
+    description:
+      "Pastrim xhamash, fasadash dhe nivelesh të larta (deri në ~17 m), panele solare, tapete dhe upholstery — plus trajnime profesionale për staf pastrimi.",
+    icon: "layers",
+    checklist: [
+      "Xham, fasadë, lift deri në 17 m",
+      "Pastrim panelesh solare",
+      "Tapete dhe upholstery",
+      "Trajnim për personel pastrimi",
+    ],
+    tags: ["Special", "Trajnim", "B2B"],
+    href: "/sherbimet/specializuar",
   },
 ];
 
@@ -69,35 +104,37 @@ export const serviceDetails: ServiceDetail[] = [
     number: "01",
     title: "Pastrim Profesional",
     subtitle:
-      "Pastrim ditor, industrial dhe pas ndërtimit për çdo lloj objekti — me pajisje të avancuara, staf të trajnuar dhe protokolle SLA.",
+      "Pastrim ditor, industrial dhe pas ndërtimit — përfshirë xham, fasadë dhe nivele të larta — me staf të trajnuar dhe matje të qarta cilësie.",
     description:
-      "Ne përcaktojmë standarde të qarta për çdo ambient: nga zyrat dhe qendrat tregtare deri te objektet industriale dhe hapësirat pas ndërtimit. Ekipet tona punojnë sipas orarëve që ju përshtaten juve, me raportim të dokumentuar dhe kontroll cilësie në çdo fazë.",
+      "Përcaktojmë standarde për çdo ambient: zyra, qendra tregtare, industri dhe hapësira pas ndërtimit. Ekipet punojnë sipas orarëve tuaja, me listë inspeksionesh, supervizim dhe dokumentim që mbështet auditimet dhe menaxhimin e objektit.",
     checklist: [
-      "Pastrim ditor dhe thellë sipas standardeve ISO",
-      "Pastrim industrial me pajisje të avancuara",
-      "Pastrim pas ndërtimit dhe renovimit",
-      "Raportim dixhital për çdo shërbim të kryer",
-      "Protokolle SLA të matshme dhe të garantuara",
-      "Produkte të sigurta për mjedisin dhe njerëzit",
+      "Pastrim ditor dhe thellë sipas kritereve të dakordësuara",
+      "Pastrim xhamash, fasadash dhe hapësirash në nivele të larta",
+      "Pastrim panelesh solare dhe sipërfaqeve të ekspozuara",
+      "Menaxhim materialesh higjienike dhe consumables sipas objektit",
+      "Pastrim industrial me pajisje të përshtatura",
+      "Pastrim pas ndërtimit dhe renovimit për dorëzim të kontrolluar",
+      "Protokolle SLA të matshme; raporte dhe transparencë në furnizime",
+      "Produkte të përzgjedhura për mjedisin dhe kategorinë e objektit",
     ],
     image:
       "https://images.pexels.com/photos/7078712/pexels-photo-7078712.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Planifikimi",
-        desc: "Hartojmë një plan të detajuar në bashkëpunim me klientin, sipas orarit të objektit.",
+        desc: "Plan në bashkëpunim me ju — orar, zona kritike dhe frekuenca — i përkthyer në checklist operacionale.",
       },
       {
         title: "Mobilizimi",
-        desc: "Ekipi arrin në lokal me të gjitha pajisjet dhe materialet e nevojshme.",
+        desc: "Ekipi dhe pajisjet mbërrijnë sipas planit; koordinim me aksesin dhe sigurinë e objektit.",
       },
       {
         title: "Ekzekutimi",
-        desc: "Realizohet pastrim sipas protokollit të dakordësuar me supervizim të vazhdueshëm.",
+        desc: "Punë sipas protokollit me supervizim në terren dhe korrigjim para se të bëhen devijime të qëndrueshme.",
       },
       {
-        title: "Raportimi",
-        desc: "Klienti merr një raport dixhital të plotë për çdo detyrë të kryer.",
+        title: "Dokumentimi",
+        desc: "Përmbledhje e kryerjeve dhe vërejtjeve — e lexueshme për menaxhimin, jo vetëm për arkivë.",
       },
     ],
     cta: {
@@ -110,35 +147,36 @@ export const serviceDetails: ServiceDetail[] = [
     number: "02",
     title: "Menaxhimi i Objekteve",
     subtitle:
-      "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim materialesh, supervizim dhe raportim transparent në kohë reale.",
+      "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim, supervizim, inspektime dhe menaxhim stafi në lokacion.",
     description:
-      "Marrëdhënia jonë me ju është e strukturuar: një pikë kontakti, plane mujore, raporte të lexueshme për menaxherët dhe transparencë të plotë për furnizimet dhe ndërhyrjet teknike. Kjo është menaxhim objektesh për organizata që nuk duan surpriza operacionale.",
+      "Një pikë kontakti, plane operative dhe raporte të strukturuara për menaxherët. Transparencë për furnizimet dhe ndërhyrjet teknike; stafi në vend sipas turneve dhe kërkesave tuaja — me monitorim cilësie dhe eskalim të qartë.",
     checklist: [
-      "Mirëmbajtje teknike e sistemeve të objektit",
+      "Mirëmbajtje teknike e sistemeve kryesore të objektit",
       "Furnizim i rregullt me materiale dhe consumables",
-      "Supervizim me raportim dixhital të vazhdueshëm",
-      "Menaxhim i plotë i stafit dhe turneve",
-      "Auditë cilësie periodike",
-      "Kontakt i dedikuar me menaxherin e llogarisë",
+      "Menaxhim i stafit në lokacionin e klientit dhe turne sipas planit",
+      "Inspektime, raportim dhe monitorim cilësie në ritëm të përshtatur",
+      "Supervizim me dokumentim — jo vetëm prani në listë",
+      "Auditë cilësie dhe rishikime me menaxhimin e objektit",
+      "Menaxher llogarie i dedikuar për koordinim dhe SLA",
     ],
     image:
       "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
         title: "Auditimi fillestar",
-        desc: "Vlerësojmë të gjitha nevojat e objektit dhe hartojmë një plan menaxhimi gjithëpërfshirës.",
+        desc: "Vlerësojmë nevojat e objektit dhe i përkthejmë në plan menaxhimi dhe matje.",
       },
       {
         title: "Aktivizimi",
-        desc: "Caktojmë stafin, materialet dhe sistemet e raportimit. Fillojmë operacionin në datën e dakordësuar.",
+        desc: "Stafi, materialet dhe kanalet e raportimit aktivizohen në datën e dakordësuar.",
       },
       {
-        title: "Menaxhimi ditor",
-        desc: "Supervizim i vazhdueshëm, komunikim i hapur me klientin dhe raportim dixhital për çdo aktivitet.",
+        title: "Operacioni ditor",
+        desc: "Supervizim, komunikim me ju dhe dokumentim i aktiviteteve dhe furnizimeve.",
       },
       {
-        title: "Rishikimi mujor",
-        desc: "Takim mujor me klientin për të rishikuar performancën dhe për të bërë përshtatjet e nevojshme.",
+        title: "Rishikimi",
+        desc: "Takime periodike për performancë, përshtatje sezonale dhe përmirësim.",
       },
     ],
     cta: {
@@ -151,35 +189,35 @@ export const serviceDetails: ServiceDetail[] = [
     number: "03",
     title: "Dezinfektim & Sanitizim",
     subtitle:
-      "Protokolle të rrepta dezinfektimi për objekte të shëndetit, ushqimit dhe çdo ambienti ku higjena është prioritet absolute.",
+      "Protokolle të forta për shëndetësi, ushqim dhe ambiente ku higjena është prioritet — me gjurmueshmëri nga zgjedhja e agjentëve deri te verifikimi.",
     description:
-      "Përdorim produkte të certifikuara dhe procedura që përputhen me kërkesat e sektorit shëndetësor dhe ushqimor. Çdo intervenim dokumentohet — nga zgjedhja e agjentëve deri te verifikimi final — që ju të keni gjurmueshmëri të plotë për auditime dhe inspektime.",
+      "Produkte të përputhshme me kërkesat e sektorit; procedura të dokumentuara për inspektime dhe auditime. Fokus në sipërfaqe, zona me trafik dhe protokolle që përputhen me rregulloret e objektit.",
     checklist: [
-      "Dezinfektim me produkte të certifikuara EU",
+      "Dezinfektim me produkte të dokumentuara dhe të përshtatshme për ambientin",
       "Sanitizim për objekte shëndetësore dhe ushqimore",
-      "Kontrolli i dëmtuesve dhe parandalimi",
-      "Dezinfektim i sipërfaqeve me UV dhe kimikate",
-      "Certifikim i procesit sipas normave ndërkombëtare",
-      "Raportim të plotë me dokumentacion të procesit",
+      "Kontroll dëmtuesish dhe parandalim sipas planit",
+      "Teknika të ndryshme aplikimi kur është e nevojshme (sipas protokollit)",
+      "Verifikim dhe dokumentacion për kërkesa rregullatore",
+      "Raportim që mbështet auditimin — jo vetëm deklarata",
     ],
     image:
       "https://images.pexels.com/photos/4035588/pexels-photo-4035588.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
-        title: "Vlerësimi i rrezikut",
-        desc: "Identifikojmë zonat me rrezik më të lartë dhe hartohet një plan dezinfektimi i personalizuar.",
+        title: "Vlerësimi",
+        desc: "Zonat me rrezik më të lartë dhe plani i personalizuar i dezinfektimit.",
       },
       {
-        title: "Zgjedhja e produkteve",
-        desc: "Përdorim produkte të certifikuara që janë efikase ndaj baktereve dhe sigurta për njerëzit.",
+        title: "Zgjedhja",
+        desc: "Agjentë dhe metoda të përshtatshme për njerëzit dhe sipërfaqet.",
       },
       {
-        title: "Aplikimi profesional",
-        desc: "Ekipi specializohet në aplikimin e produkteve nëpërmjet teknikave të ndryshme — spraj, UV, aerosolizim.",
+        title: "Aplikimi",
+        desc: "Ekip i trajnuar; respektim i kohës së veprimit dhe zonave të kufizuara.",
       },
       {
-        title: "Certifikimi",
-        desc: "Pas përfundimit të procesit, lëshojmë një certifikatë dezinfektimi të njohur nga autoritetet kompetente.",
+        title: "Dokumentimi",
+        desc: "Përmbledhje e kryerjes për menaxhim dhe (kur aplikohet) certifikim procesi.",
       },
     ],
     cta: {
@@ -192,15 +230,15 @@ export const serviceDetails: ServiceDetail[] = [
     number: "04",
     title: "Gatishmëri & Emergjencë",
     subtitle:
-      "Gatishmëri e plotë 24/7 për çdo situatë të papritur — intervenime të shpejta, shërbime sezonale dhe ndihmë kurdo që kërkohet.",
+      "Gatishmëri 24/7 kur objekti nuk pret — intervenime, sezonale, pas ngjarjesh dhe mbështetje pas festave.",
     description:
-      "Kur diçka nuk pret orarin e punës, ne jemi në linjë. Linja jonë operacionale koordinon mobilizimin e ekipit, komunikimin me ju dhe raportin pas intervenimit — që ju të dini saktësisht çfarë u bë dhe kur.",
+      "Linja operacionale koordinon mobilizimin, komunikimin me ju dhe përmbledhjen pas intervenimit — që të dini çfarë u bë, kur dhe nga kush.",
     checklist: [
-      "Intervenime emergjente brenda 2 orësh nga thirrja",
+      "Intervenime emergjente sipas marrëveshjes — koordinim i shpejtë",
       "Ekip i gatshëm 24 orë, 7 ditë në javë",
-      "Shërbime sezonale — verë, dimër, festa",
-      "Pastrim i shpejtë pas ngjarjeve dhe aksidenteve",
-      "Pa kontratë afatgjate — sipas nevojës dhe kërkesës",
+      "Shërbime sezonale verë / dimër të planifikuara me ju",
+      "Mbështetje pas ngjarjeve, aksidenteve dhe periudhave me ngarkesë të lartë",
+      "Pastrim dhe rikthim i shpejtë pas festave ose ngjarjeve të papritura",
       "Komunikim i drejtpërdrejtë me ekipin operacional",
     ],
     image:
@@ -208,24 +246,65 @@ export const serviceDetails: ServiceDetail[] = [
     process: [
       {
         title: "Thirrja",
-        desc: "Telefononi numrin tonë 24/7. Ekipi i gatshëm konfirmon intervenimin në pak minuta.",
+        desc: "Konfirmim i shpejtë dhe përshkrim i qartë i nevojës.",
       },
       {
         title: "Mobilizimi",
-        desc: "Ekipi niset drejt objektit tuaj me të gjitha pajisjet e nevojshme për situatën specifike.",
+        desc: "Ekipi dhe pajisjet sipas situatës — me informim për kohën e arritjes.",
       },
       {
         title: "Intervenimi",
-        desc: "Situata menaxhohet shpejt dhe profesionalisht. Lajmërojmë klientin për progresin.",
+        desc: "Ekzekutim sipas planit; përditësime gjatë punës kur është e nevojshme.",
       },
       {
-        title: "Raportimi",
-        desc: "Pas përfundimit, dërgojmë një raport të plotë të shërbimit të kryer.",
+        title: "Përmbledhja",
+        desc: "Përmbledhje e punës së kryer për regjistrim dhe përmirësim.",
       },
     ],
     cta: {
       headline: "Kërkoni një ekip emergjence të besueshëm?",
       text: "Na kontaktoni për ndihmë emergjence — linjë e dedikuar 24/7.",
+    },
+  },
+  {
+    slug: "specializuar",
+    number: "05",
+    title: "Shërbime të Specializuara",
+    subtitle:
+      "Kapacitete për sipërfaqe të vështira: xham dhe fasadë deri në rreth 17 m, panele solare, tapete dhe upholstery — plus trajnime për stafin e pastrimit.",
+    description:
+      "Kur standardi ditor nuk mjafton, e mobilizojmë ekipin dhe pajisjet e specializuara — gjithmonë me vlerësim paraprak të aksesit, sigurisë dhe metodës. Akademia jonë e Trajnimit në Prishtinë ofron edhe module për personelin e pastrimit, të lidhura me praktikën në objekt.",
+    checklist: [
+      "Pastrim xhamash, fasadash dhe hapësirash në lartësi (lift deri në ~17 m)",
+      "Pastrim profesional i paneleve solare",
+      "Pastrim tapetesh dhe upholstery sipas fibrës dhe objektit",
+      "Trajnim profesional për personelin e pastrimit — në akademi dhe në vendin e punës",
+      "Metoda dhe agjentë të përshtatur për sipërfaqen — jo zgjidhje universale",
+      "Koordinim me sigurinë e objektit dhe protokolle pune në lartësi",
+    ],
+    image:
+      "https://images.pexels.com/photos/4239037/pexels-photo-4239037.jpeg?auto=compress&cs=tinysrgb&w=900",
+    process: [
+      {
+        title: "Vlerësimi",
+        desc: "Akses, lartësi, lloji i sipërfaqes dhe rreziku — para ofertës.",
+      },
+      {
+        title: "Planifikimi metodës",
+        desc: "Pajisje, agjentë dhe radhitje e punës për rezultat të sigurt.",
+      },
+      {
+        title: "Ekzekutimi",
+        desc: "Ekip i specializuar me PPE dhe kontroll në hap.",
+      },
+      {
+        title: "Verifikimi",
+        desc: "Kontroll vizual dhe (kur aplikohet) dokumentim për dorëzim.",
+      },
+    ],
+    cta: {
+      headline: "Projekte me kërkesa të veçanta?",
+      text: "Kërkoni vlerësim për shërbime të specializuara ose trajnime për stafin — përgjigje e shpejtë nga operacionet.",
     },
   },
 ];
