@@ -40,7 +40,7 @@ export default function CookiesConsent() {
     <div className="cookies-banner" role="dialog" aria-label="Pëlqimi i cookies">
       <div className="cookies-banner-inner">
         <p>
-          Përdorim cookies për të përmirësuar përvojën tuaj në faqe dhe për qëllime statistikore. Duke vazhduar, ju
+          Përdorim cookies për të përmirësuar përvojën tuaj në faqen tonë dhe për qëllime statistikore. Duke vazhduar, ju
           pranoni përdorimin e cookies. Lexoni{" "}
           <Link href="/politika-privatisesi#cookies">Politikën e Privatësisë dhe Cookies</Link>.
         </p>

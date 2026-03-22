@@ -6,7 +6,7 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    text: "UNI PROJECT na shërben me pastrim dhe facility management në të gjitha degët. Profesionalë, të rregullt dhe me raportim të qartë — saktësisht çfarë na duhet.",
+    text: "UNI PROJECT na shërben me pastrim dhe menaxhim objektesh në të gjitha degët. Profesionalë, të rregullt dhe me raportim të qartë — saktësisht çfarë na duhet.",
     name: "Menaxher Operacionesh",
     role: "Bankë — rrjet kombëtar",
   },

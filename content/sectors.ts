@@ -31,13 +31,13 @@ export const sectors: Sector[] = [
     icon: "activity",
   },
   {
-    name: "Kujdesi Shëndëtesör",
-    description: "Pastrim klinik sipas normave shëndëtesore.",
+    name: "Kujdesi Shëndetësor",
+    description: "Pastrim klinik sipas normave shëndetësore.",
     icon: "heart",
   },
   {
     name: "Hoteleri",
-    description: "Standarde premium higjienik.",
+    description: "Standarde premium higjienike.",
     icon: "star",
   },
   {
@@ -60,12 +60,12 @@ export const sectorDetails: SectorDetail[] = [
     number: "01",
     name: "Banka & Institucionet Financiare",
     description:
-      "Pastrim i rrjeteve bankare kërkon konfidencialitet, saktësi dhe protokolle të rrepta sigurie. UNI PROJECT operon me diskrecion të plotë në ambientet financiare.",
+      "Pastrimi i rrjeteve bankare kërkon konfidencialitet, saktësi dhe protokolle të rrepta sigurie. UNI PROJECT operon me diskrecion të plotë në ambientet financiare.",
     checklist: [
       "Pastrim i degëve bankare me akses të kontrolluar",
       "Protokolle konfidencialiteti për stafin",
       "Raportim i detajuar për çdo lokacion",
-      "Mirëmbajtje e rrjeteve me dekë të shumta",
+      "Mirëmbajtje e rrjeteve me degë të shumta",
     ],
     image:
       "https://images.pexels.com/photos/534229/pexels-photo-534229.jpeg?auto=compress&cs=tinysrgb&w=900",
@@ -74,7 +74,7 @@ export const sectorDetails: SectorDetail[] = [
     number: "02",
     name: "Qendra Tregtare",
     description:
-      "Qendrat tregtare kërkojnë pastrim të vazhdueshëm gjatë gjithë orarit të punës. Ofrojmë staf të kualifikuar me turne të koordinuara për të ruajtur standardet higjinikë në çdo moment.",
+      "Qendrat tregtare kërkojnë pastrim të vazhdueshëm gjatë gjithë orarit të punës. Ofrojmë staf të kualifikuar me turne të koordinuara për të ruajtur standardet higjienike në çdo moment.",
     checklist: [
       "Pastrim gjatë orarit operacional",
       "Menaxhim i ambienteve të përbashkëta dhe banjove",
@@ -107,7 +107,7 @@ export const sectorCards = [
     checklist: [
       "Pastrim i zyrave, sallave dhe hapësirave të përbashkëta",
       "Mirëmbajtje e sistemeve teknike",
-      "Menaxhim i stafit — turne dhe planëzim",
+      "Menaxhim i stafit — turne dhe planifikim",
     ],
     icon: "monitor",
   },
@@ -116,12 +116,12 @@ export const sectorCards = [
 export const smallSectors = [
   {
     name: "Industri & Prodhim",
-    description: "Pastrim industrial me pajisje të avancuara për ambientë prodhuese.",
+    description: "Pastrim industrial me pajisje të avancuara për ambiente prodhuese.",
     icon: "activity",
   },
   {
-    name: "Kujdesi Shëndëtesör",
-    description: "Pastrim klinik dhe dezinfektim sipas normave shëndëtesore ndërkombëtare.",
+    name: "Kujdesi Shëndetësor",
+    description: "Pastrim klinik dhe dezinfektim sipas normave shëndetësore ndërkombëtare.",
     icon: "heart",
   },
   {
@@ -131,7 +131,7 @@ export const smallSectors = [
   },
   {
     name: "Post-konstruksion",
-    description: "Pastrimi final pas ndërtimit ose renovimit për dorëzim të objektivit.",
+    description: "Pastrimi final pas ndërtimit ose renovimit për dorëzim të objektit.",
     icon: "construction",
   },
 ];

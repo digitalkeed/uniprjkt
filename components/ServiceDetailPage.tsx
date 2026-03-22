@@ -16,23 +16,10 @@ export default function ServiceDetailPage({ service }: { service: ServiceDetail 
           { label: "Shërbimet", href: "/sherbimet" },
           { label: service.title },
         ]}
-        title={`Shërbimi`}
+        title={service.title}
         titleEm={service.number}
         subtitle={service.subtitle}
-      >
-        <h2
-          style={{
-            fontFamily: "var(--font-d)",
-            fontSize: "2rem",
-            fontWeight: 700,
-            color: "#fff",
-            marginTop: 8,
-            letterSpacing: "-.02em",
-          }}
-        >
-          {service.title}
-        </h2>
-      </PageHeader>
+      />
 
       <section className="sec">
         <div className="wrap">
@@ -41,7 +28,7 @@ export default function ServiceDetailPage({ service }: { service: ServiceDetail 
               <div className="eyebrow">Çfarë ofrojmë</div>
               <h2 className="section-title">{service.title}</h2>
               <p className="section-sub">{service.description}</p>
-              <div style={{ marginTop: 28 }}>
+              <div className="mt-8">
                 <CheckList items={service.checklist} />
               </div>
               <div className="sherbimet-actions">
@@ -49,58 +36,23 @@ export default function ServiceDetailPage({ service }: { service: ServiceDetail 
                 <Link href="/sherbimet" className="btn btn-outline">Shërbimet e tjera</Link>
               </div>
             </div>
-            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-              <img className="photo-cover" src={service.image} alt={service.title} style={{ filter: "brightness(.88) saturate(.85)" }} />
+            <div className="photo-frame photo-frame-ar layout-2col-img">
+              <img className="photo-cover photo-muted" src={service.image} alt={service.title} loading="lazy" />
             </div>
           </div>
 
-          {/* Process */}
           <div className="process-box">
             <div className="sh center">
               <div className="eyebrow">Procesi</div>
               <h2 className="section-title">Si e ekzekutojmë</h2>
             </div>
-            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            <div className="process-step-list">
               {service.process.map((step, i) => (
-                <div
-                  key={i}
-                  style={{
-                    display: "flex",
-                    gap: 16,
-                    alignItems: "flex-start",
-                    padding: 20,
-                    background: "#fff",
-                    border: "1px solid var(--div)",
-                    borderRadius: "var(--r)",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontFamily: "var(--font-m)",
-                      fontSize: "1.1rem",
-                      fontWeight: 500,
-                      color: "var(--blue)",
-                      flexShrink: 0,
-                      minWidth: 28,
-                    }}
-                  >
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
+                <div key={i} className="process-step">
+                  <div className="process-step-num">{String(i + 1).padStart(2, "0")}</div>
                   <div>
-                    <div
-                      style={{
-                        fontFamily: "var(--font-d)",
-                        fontWeight: 600,
-                        fontSize: ".9rem",
-                        color: "var(--text-h)",
-                        marginBottom: 4,
-                      }}
-                    >
-                      {step.title}
-                    </div>
-                    <div style={{ fontSize: ".85rem", color: "var(--text-m)" }}>
-                      {step.desc}
-                    </div>
+                    <div className="process-step-title">{step.title}</div>
+                    <div className="process-step-desc">{step.desc}</div>
                   </div>
                 </div>
               ))}

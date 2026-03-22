@@ -11,11 +11,11 @@ export default function Footer() {
               <Logo className="logo-full--light" />
             </Link>
             <p className="ft-desc">
-              Pastrim profesional, mirëmbajtje teknike dhe facility management në të gjithë
+              Pastrim profesional, mirëmbajtje teknike dhe menaxhim i objekteve në të gjithë
               Kosovën. Partner i besueshëm i sektorit korporativ që nga 2001.
             </p>
             <div className="ft-since">&#8212; Themeluar 2001</div>
-            <div className="iso-pills" style={{ marginTop: 18 }}>
+            <div className="iso-pills ft-iso-pills">
               <span className="iso-pill">ISO 9001</span>
               <span className="iso-pill">ISO 14001</span>
               <span className="iso-pill">ISO 45001</span>

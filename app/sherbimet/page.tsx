@@ -19,7 +19,7 @@ export default function SherbimetPage() {
         breadcrumbs={[{ label: "Ballina", href: "/" }, { label: "Shërbimet" }]}
         title="Shërbimet"
         titleEm="tona"
-        subtitle="Tre shtylla kryesore që mbulojnë çdo nevojë të objektit tuaj — nga pastrim ditor deri te menaxhim i plotë i infrastrukturës."
+        subtitle="Katër shtylla operacionale — pastrim, menaxhim objektesh, dezinfektim dhe gatishmëri emergjence — me të njëjtin standard raportimi dhe SLA."
       />
 
       <section className="sec">
@@ -29,14 +29,14 @@ export default function SherbimetPage() {
               <div className={`layout-2col sherbimet-block ${i % 2 === 1 ? "layout-2col--image-first" : ""}`} style={{ marginBottom: i < serviceDetails.length - 1 ? 100 : 0 }}>
                 {i % 2 === 1 ? (
                   <>
-                    <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-                      <img className="photo-cover" src={svc.image} alt={svc.title} style={{ filter: "brightness(.9) saturate(.85)" }} />
+                    <div className="photo-frame photo-frame-ar layout-2col-img">
+                      <img className="photo-cover photo-muted" src={svc.image} alt={svc.title} loading="lazy" />
                     </div>
                     <div className="layout-2col-content">
                       <div className="eyebrow">Shërbimi {svc.number}</div>
                       <h2 className="section-title">{svc.title}</h2>
                       <p className="section-sub">{svc.description}</p>
-                      <div style={{ marginTop: 28 }}>
+                      <div className="mt-8">
                         <CheckList items={svc.checklist} />
                       </div>
                       <div className="sherbimet-actions">
@@ -51,7 +51,7 @@ export default function SherbimetPage() {
                       <div className="eyebrow">Shërbimi {svc.number}</div>
                       <h2 className="section-title">{svc.title}</h2>
                       <p className="section-sub">{svc.description}</p>
-                      <div style={{ marginTop: 28 }}>
+                      <div className="mt-8">
                         <CheckList items={svc.checklist} />
                       </div>
                       <div className="sherbimet-actions">
@@ -59,8 +59,8 @@ export default function SherbimetPage() {
                         <Link href="/kontakt" className="btn btn-outline">Kërko ofertë</Link>
                       </div>
                     </div>
-                    <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-                      <img className="photo-cover" src={svc.image} alt={svc.title} style={{ filter: "brightness(.9) saturate(.85)" }} />
+                    <div className="photo-frame photo-frame-ar layout-2col-img">
+                      <img className="photo-cover photo-muted" src={svc.image} alt={svc.title} loading="lazy" />
                     </div>
                   </>
                 )}
@@ -72,8 +72,8 @@ export default function SherbimetPage() {
       </section>
 
       <CTABand
-        headline="Nuk jeni të sigurt cili shërbim ju nevojitet?"
-        text="Na kontaktoni dhe në 24 orë ju dërgojmë një propozim të personalizuar, pa angazhim."
+        headline="Nuk jeni të sigurt cili shërbim ju përshtatet?"
+        text="Na kontaktoni dhe brenda 24 orëve ju dërgojmë një propozim të personalizuar — pa angazhim fillestar."
         buttonLabel="Na kontaktoni"
         note="Përgjigje brenda 24 orësh"
       />

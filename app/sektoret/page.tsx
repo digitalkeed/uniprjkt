@@ -16,45 +16,42 @@ export default function SektoretPage() {
       <PageHeader
         breadcrumbs={[{ label: "Ballina", href: "/" }, { label: "Sektorët" }]}
         title="Sektorët që"
-        titleEm="shërbejm"
+        titleEm="shërbejmë"
         subtitle="Që nga sektori bankar deri tek industria e prodhimit — UNI PROJECT ofron zgjidhje të specializuara për çdo lloj objekti."
       />
 
       <section className="sec">
         <div className="wrap">
-          {/* Sector 1 */}
           <div className="layout-2col sektoret-block">
             <div className="layout-2col-content">
               <div className="eyebrow">Sektori {sectorDetails[0].number}</div>
               <h2 className="section-title">{sectorDetails[0].name}</h2>
               <p className="section-sub">{sectorDetails[0].description}</p>
-              <div style={{ marginTop: 24 }}>
+              <div className="mt-8">
                 <CheckList items={sectorDetails[0].checklist} />
               </div>
             </div>
-            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-              <img className="photo-cover" src={sectorDetails[0].image} alt={sectorDetails[0].name} style={{ filter: "brightness(.85) saturate(.8)" }} />
+            <div className="photo-frame photo-frame-ar layout-2col-img">
+              <img className="photo-cover photo-muted--soft" src={sectorDetails[0].image} alt={sectorDetails[0].name} loading="lazy" />
             </div>
           </div>
           <hr className="hr sektoret-hr" />
 
-          {/* Sector 2 */}
           <div className="layout-2col layout-2col--image-first sektoret-block">
-            <div className="photo-frame layout-2col-img" style={{ aspectRatio: "4/3" }}>
-              <img className="photo-cover" src={sectorDetails[1].image} alt={sectorDetails[1].name} style={{ filter: "brightness(.85) saturate(.8)" }} />
+            <div className="photo-frame photo-frame-ar layout-2col-img">
+              <img className="photo-cover photo-muted--soft" src={sectorDetails[1].image} alt={sectorDetails[1].name} loading="lazy" />
             </div>
             <div className="layout-2col-content">
               <div className="eyebrow">Sektori {sectorDetails[1].number}</div>
               <h2 className="section-title">{sectorDetails[1].name}</h2>
               <p className="section-sub">{sectorDetails[1].description}</p>
-              <div style={{ marginTop: 24 }}>
+              <div className="mt-8">
                 <CheckList items={sectorDetails[1].checklist} />
               </div>
             </div>
           </div>
           <hr className="hr sektoret-hr" />
 
-          {/* Sectors 3 + 4 side by side */}
           <div className="layout-2col sektoret-cards" style={{ gap: 32, marginBottom: 96 }}>
             {sectorCards.map((sec) => (
               <div key={sec.number} className="sektoret-card">
@@ -63,12 +60,8 @@ export default function SektoretPage() {
                 </div>
                 <div>
                   <div className="eyebrow">Sektori {sec.number}</div>
-                  <h3 style={{ fontFamily: "var(--font-d)", fontSize: "1.5rem", fontWeight: 700, color: "var(--text-h)", letterSpacing: "-.015em", marginBottom: 12 }}>
-                    {sec.name}
-                  </h3>
-                  <p style={{ fontSize: ".9rem", color: "var(--text-m)", lineHeight: 1.72 }}>
-                    {sec.description}
-                  </p>
+                  <h2 className="sektoret-card-title">{sec.name}</h2>
+                  <p className="sektoret-card-text">{sec.description}</p>
                 </div>
                 <CheckList items={sec.checklist} />
               </div>
@@ -76,19 +69,18 @@ export default function SektoretPage() {
           </div>
           <hr className="hr sektoret-hr" />
 
-          {/* Sectors 5-8 grid */}
           <div className="sh center">
             <div className="eyebrow">Sektorë të tjerë</div>
-            <h2 className="section-title">Edhe më shumë sektoret të shërbyer</h2>
+            <h2 className="section-title">Edhe më shumë sektorë të shërbyer</h2>
           </div>
           <div className="grid-4">
             {smallSectors.map((sec) => (
-              <div key={sec.name} className="card" style={{ padding: 32, display: "flex", flexDirection: "column", gap: 14 }}>
+              <div key={sec.name} className="card small-sector-card h-full">
                 <div className="card-icon">
                   <SectorIcon type={sec.icon} />
                 </div>
-                <div style={{ fontFamily: "var(--font-d)", fontWeight: 600, color: "var(--text-h)" }}>{sec.name}</div>
-                <div style={{ fontSize: ".85rem", color: "var(--text-m)", lineHeight: 1.6 }}>{sec.description}</div>
+                <h3 className="sektoret-card-title">{sec.name}</h3>
+                <p className="sektoret-card-text">{sec.description}</p>
               </div>
             ))}
           </div>

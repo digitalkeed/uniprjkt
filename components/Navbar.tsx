@@ -90,11 +90,11 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
-          <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: 12 }}>
-            <a href="tel:+38344123456" className="btn btn-outline btn-lg" style={{ justifyContent: "center" }}>
+          <div className="mobile-menu-cta">
+            <a href="tel:+38344123456" className="btn btn-outline btn-lg btn-block">
               +383 44 123 456
             </a>
-            <Link href="/kontakt" onClick={closeMenu} className="btn btn-blue btn-lg" style={{ justifyContent: "center" }}>
+            <Link href="/kontakt" onClick={closeMenu} className="btn btn-blue btn-lg btn-block">
               Kërko ofertë
             </Link>
           </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import CookiesConsent from "@/components/CookiesConsent";
 
 export const metadata: Metadata = {
   title: {
@@ -24,8 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-import CookiesConsent from "@/components/CookiesConsent";
-
 export default function RootLayout({
   children,
 }: {
@@ -34,7 +33,10 @@ export default function RootLayout({
   return (
     <html lang="sq">
       <body>
-        {children}
+        <a href="#main-content" className="skip-link">
+          Kaloni te përmbajtja kryesore
+        </a>
+        <main id="main-content">{children}</main>
         <CookiesConsent />
       </body>
     </html>

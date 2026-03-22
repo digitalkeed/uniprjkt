@@ -27,12 +27,8 @@ export const serviceSummaries: ServiceSummary[] = [
     description:
       "Pastrim ditor, industrial, pas ndërtimit dhe qendra tregtare me pajisje të avancuara dhe protokolle SLA.",
     icon: "building",
-    checklist: [
-      "Pastrim ditor dhe thellë",
-      "Pajisje profesionale",
-      "Raportim dixhital",
-    ],
-    tags: ["B2B", "SLA", "Higjenë"],
+    checklist: ["Pastrim ditor dhe thellë", "Pajisje profesionale", "Raportim dixhital"],
+    tags: ["B2B", "SLA", "Higjienë"],
     href: "/sherbimet/pastrim",
   },
   {
@@ -41,13 +37,19 @@ export const serviceSummaries: ServiceSummary[] = [
     description:
       "Mirëmbajtje teknike e plotë, furnizim materialesh, supervizim i vazhdueshëm dhe raportim transparent.",
     icon: "monitor",
-    checklist: [
-      "Mirëmbajtje teknike",
-      "Materiale dhe furnizime",
-      "Supervizim dhe raportim",
-    ],
+    checklist: ["Mirëmbajtje teknike", "Materiale dhe furnizime", "Supervizim dhe raportim"],
     tags: ["B2B", "24/7", "SLA"],
     href: "/sherbimet/facility",
+  },
+  {
+    slug: "dezinfektim",
+    title: "Dezinfektim & Sanitizim",
+    description:
+      "Protokolle të rrepta për objekte shëndetësore, ushqimore dhe ambiente me kërkesa të larta higjienike.",
+    icon: "activity",
+    checklist: ["Produkte të certifikuara", "Dokumentacion i plotë", "Ekip i specializuar"],
+    tags: ["Certifikim", "SLA", "B2B"],
+    href: "/sherbimet/dezinfektim",
   },
   {
     slug: "oncall",
@@ -55,11 +57,7 @@ export const serviceSummaries: ServiceSummary[] = [
     description:
       "Gatishmëri e plotë 24/7 për intervenime urgjente, shërbime sezonale dhe situata të papritura.",
     icon: "clock",
-    checklist: [
-      "Gatishmëri 24/7",
-      "Emergjenca dhe sezonale",
-      "Orar i zgjatur",
-    ],
+    checklist: ["Gatishmëri 24/7", "Emergjenca dhe sezonale", "Orar i zgjatur"],
     tags: ["24/7", "Emergjencë", "B2B"],
     href: "/sherbimet/oncall",
   },
@@ -73,7 +71,7 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle:
       "Pastrim ditor, industrial dhe pas ndërtimit për çdo lloj objekti — me pajisje të avancuara, staf të trajnuar dhe protokolle SLA.",
     description:
-      "Pastrim ditor, industrial dhe pas ndërtimit për çdo lloj objekti — me pajisje të avancuara, staf të trajnuar dhe protokolle SLA.",
+      "Ne përcaktojmë standarde të qarta për çdo ambient: nga zyrat dhe qendrat tregtare deri te objektet industriale dhe hapësirat pas ndërtimit. Ekipet tona punojnë sipas orarëve që ju përshtaten juve, me raportim të dokumentuar dhe kontroll cilësie në çdo fazë.",
     checklist: [
       "Pastrim ditor dhe thellë sipas standardeve ISO",
       "Pastrim industrial me pajisje të avancuara",
@@ -99,12 +97,12 @@ export const serviceDetails: ServiceDetail[] = [
       },
       {
         title: "Raportimi",
-        desc: "Klienti merr një raport dixhital të kompletë për çdo taskim të kryer.",
+        desc: "Klienti merr një raport dixhital të plotë për çdo detyrë të kryer.",
       },
     ],
     cta: {
       headline: "Gati për një ambient më të pastër?",
-      text: "Na kontaktoni tani për një vlerësim falas pa angazhim.",
+      text: "Kërkoni ofertë për pastrim profesional — vlerësim fillestar pa angazhim.",
     },
   },
   {
@@ -112,15 +110,15 @@ export const serviceDetails: ServiceDetail[] = [
     number: "02",
     title: "Menaxhimi i Objekteve",
     subtitle:
-      "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim materialesh, supervizim dhe raportim transparent në kohe reale.",
+      "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim materialesh, supervizim dhe raportim transparent në kohë reale.",
     description:
-      "Menaxhim i plotë i objektit — mirëmbajtje teknike, furnizim materialesh, supervizim dhe raportim transparent në kohe reale.",
+      "Marrëdhënia jonë me ju është e strukturuar: një pikë kontakti, plane mujore, raporte të lexueshme për menaxherët dhe transparencë të plotë për furnizimet dhe ndërhyrjet teknike. Kjo është menaxhim objektesh për organizata që nuk duan surpriza operacionale.",
     checklist: [
       "Mirëmbajtje teknike e sistemeve të objektit",
       "Furnizim i rregullt me materiale dhe consumables",
       "Supervizim me raportim dixhital të vazhdueshëm",
       "Menaxhim i plotë i stafit dhe turneve",
-      "Auditë cilëëisie periodike",
+      "Auditë cilësie periodike",
       "Kontakt i dedikuar me menaxherin e llogarisë",
     ],
     image:
@@ -132,11 +130,11 @@ export const serviceDetails: ServiceDetail[] = [
       },
       {
         title: "Aktivizimi",
-        desc: "Caktojmë stafin, materialet dhe sistemet e raportimit. Fillojmë opëracionin në datën e dakordësuar.",
+        desc: "Caktojmë stafin, materialet dhe sistemet e raportimit. Fillojmë operacionin në datën e dakordësuar.",
       },
       {
         title: "Menaxhimi ditor",
-        desc: "Supervizim i vazhdueshëm, komunikim i hapët me klientin dhe raportim dixhital për çdo aktivitet.",
+        desc: "Supervizim i vazhdueshëm, komunikim i hapur me klientin dhe raportim dixhital për çdo aktivitet.",
       },
       {
         title: "Rishikimi mujor",
@@ -145,7 +143,7 @@ export const serviceDetails: ServiceDetail[] = [
     ],
     cta: {
       headline: "Kërkoni një partner të besueshëm për objektin tuaj?",
-      text: "Na kontaktoni tani për një vlerësim falas pa angazhim.",
+      text: "Na kontaktoni për menaxhim objektesh — analizë fillestare dhe ofertë e strukturuar.",
     },
   },
   {
@@ -155,11 +153,11 @@ export const serviceDetails: ServiceDetail[] = [
     subtitle:
       "Protokolle të rrepta dezinfektimi për objekte të shëndetit, ushqimit dhe çdo ambienti ku higjena është prioritet absolute.",
     description:
-      "Protokolle të rrepta dezinfektimi për objekte të shëndetit, ushqimit dhe çdo ambienti ku higjena është prioritet absolute.",
+      "Përdorim produkte të certifikuara dhe procedura që përputhen me kërkesat e sektorit shëndetësor dhe ushqimor. Çdo intervenim dokumentohet — nga zgjedhja e agjentëve deri te verifikimi final — që ju të keni gjurmueshmëri të plotë për auditime dhe inspektime.",
     checklist: [
       "Dezinfektim me produkte të certifikuara EU",
-      "Sanitizim për objekte shëndëtesore dhe ushqimore",
-      "Kontrolli i pestës dhe prevënicioni",
+      "Sanitizim për objekte shëndetësore dhe ushqimore",
+      "Kontrolli i dëmtuesve dhe parandalimi",
       "Dezinfektim i sipërfaqeve me UV dhe kimikate",
       "Certifikim i procesit sipas normave ndërkombëtare",
       "Raportim të plotë me dokumentacion të procesit",
@@ -168,7 +166,7 @@ export const serviceDetails: ServiceDetail[] = [
       "https://images.pexels.com/photos/4035588/pexels-photo-4035588.jpeg?auto=compress&cs=tinysrgb&w=900",
     process: [
       {
-        title: "Vështërimi i riskut",
+        title: "Vlerësimi i rrezikut",
         desc: "Identifikojmë zonat me rrezik më të lartë dhe hartohet një plan dezinfektimi i personalizuar.",
       },
       {
@@ -177,16 +175,16 @@ export const serviceDetails: ServiceDetail[] = [
       },
       {
         title: "Aplikimi profesional",
-        desc: "Ekipi specializohet në aplikimin e produkteve nëpërmjet teknikave të ndryshme — sprëj, UV, aerosolizim.",
+        desc: "Ekipi specializohet në aplikimin e produkteve nëpërmjet teknikave të ndryshme — spraj, UV, aerosolizim.",
       },
       {
         title: "Certifikimi",
-        desc: "Pasi procesi përfundon, lëshojmë një certifikatë dezinfektimi të njohur nga autoritetet kompetente.",
+        desc: "Pas përfundimit të procesit, lëshojmë një certifikatë dezinfektimi të njohur nga autoritetet kompetente.",
       },
     ],
     cta: {
       headline: "Nevojitet dezinfektim urgjent ose i planifikuar?",
-      text: "Na kontaktoni tani për një vlerësim falas pa angazhim.",
+      text: "Kërkoni vlerësim për dezinfektim — përgjigje e shpejtë dhe plan i qartë.",
     },
   },
   {
@@ -194,15 +192,15 @@ export const serviceDetails: ServiceDetail[] = [
     number: "04",
     title: "Gatishmëri & Emergjencë",
     subtitle:
-      "Gatishmëri e plotë 24/7 për çdo situatë të papërpunuar — intervenime të shpejta, shërbime sezonale dhe ndihmë kurdo që kërkohet.",
+      "Gatishmëri e plotë 24/7 për çdo situatë të papritur — intervenime të shpejta, shërbime sezonale dhe ndihmë kurdo që kërkohet.",
     description:
-      "Gatishmëri e plotë 24/7 për çdo situatë të papërpunuar — intervenime të shpejta, shërbime sezonale dhe ndihmë kurdo që kërkohet.",
+      "Kur diçka nuk pret orarin e punës, ne jemi në linjë. Linja jonë operacionale koordinon mobilizimin e ekipit, komunikimin me ju dhe raportin pas intervenimit — që ju të dini saktësisht çfarë u bë dhe kur.",
     checklist: [
       "Intervenime emergjente brenda 2 orësh nga thirrja",
       "Ekip i gatshëm 24 orë, 7 ditë në javë",
       "Shërbime sezonale — verë, dimër, festa",
-      "Pastrim i shpejtë pas ngrajëeve dhe aksidenteve",
-      "Pa kontratë afatgjate — sipas nevojës dhe kërkesesë",
+      "Pastrim i shpejtë pas ngjarjeve dhe aksidenteve",
+      "Pa kontratë afatgjate — sipas nevojës dhe kërkesës",
       "Komunikim i drejtpërdrejtë me ekipin operacional",
     ],
     image:
@@ -214,7 +212,7 @@ export const serviceDetails: ServiceDetail[] = [
       },
       {
         title: "Mobilizimi",
-        desc: "Ekipi largohet dëgjrë objektivit tuaj me të gjitha pajisjet e nevojshme për situatën speciçë.",
+        desc: "Ekipi niset drejt objektit tuaj me të gjitha pajisjet e nevojshme për situatën specifike.",
       },
       {
         title: "Intervenimi",
@@ -227,7 +225,7 @@ export const serviceDetails: ServiceDetail[] = [
     ],
     cta: {
       headline: "Kërkoni një ekip emergjence të besueshëm?",
-      text: "Na kontaktoni tani për një vlerësim falas pa angazhim.",
+      text: "Na kontaktoni për ndihmë emergjence — linjë e dedikuar 24/7.",
     },
   },
 ];
