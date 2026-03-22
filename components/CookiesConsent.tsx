@@ -12,17 +12,20 @@ export default function CookiesConsent() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY) as Consent | null;
-      if (stored === "all" || stored === "essential") {
-        setConsent(stored);
-      } else {
+    // Defer reads so setState isn’t synchronous in the effect body (react-hooks/set-state-in-effect)
+    queueMicrotask(() => {
+      try {
+        const stored = localStorage.getItem(STORAGE_KEY) as Consent | null;
+        if (stored === "all" || stored === "essential") {
+          setConsent(stored);
+        } else {
+          setConsent(null);
+        }
+      } catch {
         setConsent(null);
       }
-    } catch {
-      setConsent(null);
-    }
-    setMounted(true);
+      setMounted(true);
+    });
   }, []);
 
   const save = (value: "all" | "essential") => {

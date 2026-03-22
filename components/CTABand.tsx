@@ -6,12 +6,14 @@ export default function CTABand({
   buttonLabel = "Kërko ofertë",
   buttonHref = "/kontakt",
   note = "Ju kontaktojmë brenda 24 orësh · Pa angazhim",
+  bullets,
 }: {
   headline: string;
   text: string;
   buttonLabel?: string;
   buttonHref?: string;
   note?: string;
+  bullets?: string[];
 }) {
   return (
     <div className="cta-band">
@@ -20,6 +22,13 @@ export default function CTABand({
           <div>
             <h2 className="cta-h">{headline}</h2>
             <p className="cta-p">{text}</p>
+            {bullets && bullets.length > 0 && (
+              <ul className="cta-bullets">
+                {bullets.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
+            )}
           </div>
           <div className="cta-btns">
             <Link href={buttonHref} className="btn btn-white btn-lg">

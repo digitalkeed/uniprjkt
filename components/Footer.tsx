@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-main">
           <div>
             <Link href="/" className="ft-logo-wrap" aria-label="UNI PROJECT — Ballina">
-              <Logo className="logo-full--light" />
+              <Logo />
             </Link>
             <p className="ft-desc">
               Pastrim profesional, mirëmbajtje teknike dhe menaxhim i objekteve në të gjithë

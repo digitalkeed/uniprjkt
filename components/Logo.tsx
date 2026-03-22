@@ -2,7 +2,7 @@
 
 /**
  * Full UNI PROJECT logo from UNI Project LOGO SVG.svg.
- * Use className "logo-full--light" on dark backgrounds (footer) for white/light color.
+ * Use className "logo-full--light" on dark backgrounds (e.g. hero overlays) for white fill.
  */
 export default function Logo({ className = "" }: { className?: string }) {
   return (
